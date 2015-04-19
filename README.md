@@ -4,7 +4,7 @@
 - 2, start up client program with login, logout
 - 3, start up server program with table, table check, keepalive
 
-##Next Step:
+###Next Step:
 - 1, file transfer
 - 2, file segmentation
 - 3, file run 
