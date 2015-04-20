@@ -1,7 +1,7 @@
-
+// e.g. fileSeg("abc",10)
 int fileSeg(char filename[],int n)
 { 
-  char sfilename[20];
+  	char sfilename[20];
 	char sfile[20];
 	char dfilename[20];
 	char ch;
@@ -25,7 +25,7 @@ int fileSeg(char filename[],int n)
 		exit(0);
 	}
   
-  while( idx<n )
+  	while( idx<n )
 	{
 		  sprintf(dfilename,"%s_%d.txt",sfile,idx);
   		if((dfp=fopen(dfilename,"wb"))==0)
@@ -35,7 +35,7 @@ int fileSeg(char filename[],int n)
   		}
 		
 		  idx=idx+1;
-  	  if (idx==n)
+  		if (idx==n)
   		{
   			end_flag=1;
   		}
@@ -54,10 +54,10 @@ void FilePartition(FILE *sfp, FILE *dfp, int size,int flag)
 	{
 			while (!feof(sfp))
 			{
-				printf("!feof(sfp) \n");
+				//printf("!feof(sfp) \n");
 				fgets(line, 256, sfp); 
 				fprintf(dfp,"%s",line);
-				printf("%s",line);
+				//printf("%s",line);
 			}
 	}
 	else
@@ -65,7 +65,7 @@ void FilePartition(FILE *sfp, FILE *dfp, int size,int flag)
 		while (s!=0)
 		{
 			fgets(line, 256, sfp); 
-			printf("%s\n",line);
+			//printf("%s\n",line);
 			fprintf(dfp,"%s",line);
 			fputs("\n",dfp);
 			s--;
@@ -81,9 +81,9 @@ int scanline(char * filename)
     FILE * f = 0; 
 	char line[256]=""; 
 	int lines = 0;
-    f = fopen(filename, "r");
-    if(!f) return 0;
-    while(!feof(f)) 
+    	f = fopen(filename, "r");
+    	if(!f) return 0;
+    	while(!feof(f)) 
 	{ 
 		fgets(line, 256, f); 
 		lines++;
