@@ -3,17 +3,6 @@
 
 #include "csapp.h"
 
-#define SIZEMAX 256
-#define TABLESIZE 100
-#define MAXRETRY 5
-
-#define LOGIN 1
-#define LOGOUT 2
-#define KEEPALIVE 3
-
-#define ONLINE 1
-#define EMPTY -1
-
 struct clientNode{
 	SA addr;
 	pthread_t tid;
@@ -28,7 +17,9 @@ void *keepAlive(void*);
 int tableAdd(SA addr);
 int tableRemove(SA addr);
 int saEqual(SA addr1,SA addr2);
-
+void selectNode(int num,struct clientNode Task[SIZEMAX],int* numActual);
+int allocateTask(int taskid,struct clientNode client,char* program_name,char* data_name,char* output);
+void fileSplit(char* file_name,int num);
 void ip_convert(SA addr,char*);
 
 pthread_t beathearttid;

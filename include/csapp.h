@@ -56,6 +56,22 @@ extern char **environ; /* defined by libc */
 #define MAXBUF   8192  /* max I/O buffer size */
 #define LISTENQ  1024  /* second argument to listen() */
 
+#define SIZEMAX 256
+#define TABLESIZE 100
+#define MAXRETRY 5
+#define FILEMAX 200000
+
+#define LOGIN 1
+#define LOGOUT 2
+#define KEEPALIVE 3
+#define DOWNLOAD 4
+#define UPLOAD 5
+#define SUBMIT 6
+#define ALLOCATE 7
+
+#define ONLINE 1
+#define EMPTY -1
+
 /* Our own error-handling functions */
 void unix_error(char *msg);
 void posix_error(int code, char *msg);
@@ -152,6 +168,11 @@ int open_listenfd(int portno);
 /* Wrappers for client/server helper functions */
 int Open_clientfd(char *hostname, int port);
 int Open_listenfd(int port); 
+
+int FileSend(char conn_ip[SIZEMAX],int conn_port,int listenPort,char* filename);
+int FileRecv(char conn_ip[SIZEMAX],int conn_port,int listenPort,char* filename);
+int fileSend(int fd, char* filename);
+int fileRecv(int fd, char* filename);
 
 #endif /* __CSAPP_H__ */
 /* $end csapp.h */

@@ -797,3 +797,91 @@ int Open_listenfd(int port)
 }
 /* $end csapp.c */
 
+
+int FileSend(char conn_ip[SIZEMAX],int conn_port,int listenPort,char* filename)
+{
+	int buf1[SIZEMAX];
+	int connfd;
+	int ret;
+	buf1[0]=UPLOAD;
+	buf1[1]=listenPort;
+	connfd=Open_clientfd(conn_ip, conn_port);
+    Rio_writep(connfd,buf1,2*sizeof(int));
+	Rio_writep(connfd,filename,SIZEMAX);
+	ret=fileSend(connfd,filename);
+    close(connfd);
+	return ret;
+}
+
+int FileRecv(char conn_ip[SIZEMAX],int conn_port,int listenPort,char* filename)
+{
+	int buf1[SIZEMAX];
+	int connfd;
+	int ret;
+	buf1[0]=DOWNLOAD;
+	buf1[1]=listenPort;
+	connfd=Open_clientfd(conn_ip, conn_port);
+    Rio_writep(connfd,buf1,2*sizeof(int));
+	Rio_writep(connfd,filename,SIZEMAX);
+	ret=fileRecv(connfd,filename);
+    close(connfd);
+	return ret;
+}
+
+int fileSend(int fd, char* filename)
+{
+	FILE* fp;
+	char buf1[SIZEMAX];
+	int ret=0;
+    int rc;
+    int size;
+	if((fp=fopen(filename,"r"))==NULL)
+    {
+        printf("can not open file\n");
+        return -1;
+    }
+
+    fseek(fp, 0L, SEEK_END);   
+    size = ftell(fp);   
+    rewind(fp);
+    Rio_writep(fd,&size,sizeof(int));
+    printf("The size of the file to send is %d\n",size);
+    while(size>0)
+	{
+        rc=fread(buf1,sizeof(char),SIZEMAX,fp);
+		ret+=Rio_writep(fd,buf1,rc); 
+        size-=rc;
+    }
+    fclose(fp);	
+    printf("send %d\n",ret);
+    return ret;
+}
+int fileRecv(int fd, char* filename)
+{
+	FILE* fp;
+	int ret=0;
+    int size;
+    int rc=0;
+	char buf1[SIZEMAX];
+	if((fp=fopen(filename,"w"))==NULL)
+    {
+        printf("can not open file\n");
+        return -1;
+    }
+
+    Rio_readp(fd,&size,sizeof(int));
+    printf("The size of the file to recv is %d\n",size);
+    while(size>0)
+	{
+        if(size>SIZEMAX)
+            rc=Rio_readp(fd,buf1,SIZEMAX);
+        else
+            rc=Rio_readp(fd,buf1,size);
+        size-=rc;
+        ret+=rc;
+		fwrite(buf1,sizeof(char),rc,fp);
+    }
+    fclose(fp);
+    printf("recv %d\n",ret);
+    return ret;
+}
