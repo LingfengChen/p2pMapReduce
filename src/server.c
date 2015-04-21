@@ -4,6 +4,7 @@
 #include <pthread.h>
 #include "stdlib.h"
 #include "server.h"
+#include "fileseg.h"
 
 void* cmd()
 {
@@ -42,9 +43,13 @@ void* cmd()
       		}
       		printf("___________________________\n");
       	}
-      	else if(!strcmp(input,"checksplit"))
+      	else if(!strcmp(input,"checkduplicate"))
       	{
-      		fileSplit("a",5);
+      		fileDuplicate("a",5);
+      	}
+      	else if(!strcmp(input,"checkseg"))
+      	{
+      		fileSeg("a",5);
       	}
     }
     return;
@@ -68,70 +73,6 @@ void Listening(int listenPort)
         Pthread_create(&tid,NULL,handle,Args);
         pthread_detach(tid);
     }
-}
-
-void *keepAlive(void *Args)
-{
-	SA clientaddr=*((SA*)Args);
-	int fd;
-	int num;
-	int buf1[SIZEMAX];
-	buf1[0]=KEEPALIVE;
-	buf1[1]=ntohs(clientaddr.sin_port);
-	rio_t client;
-	int retry=0;
-	while(1)
-	{
-		if(retry>MAXRETRY)
-		{
-			printf("retry time is over\n");
-			tableRemove(clientaddr);
-			return;
-		}
-		sleep(3);
-		if ((fd = socket(AF_INET, SOCK_STREAM, 0)) <= 0)
-		{
-			printf("fd error\n");
-			return;
-		}
-		if (connect(fd, (struct sockaddr *) &clientaddr, sizeof(SA)) < 0)
-		{
-			printf("connection error retry %d\n",retry);
-			retry++;
-			close(fd);
-			continue;
-		}
-		if(fd<=0)
-		{
-			printf("fd < 0 retry %d\n",retry);
-			retry++;
-			sleep(5);
-			close(fd);
-			continue;
-		}
-
-		num=Rio_writen(fd,(char*)buf1,2*sizeof(int));
-		if(num<=0)
-		{
-			printf("can not write retry %d\n",retry);
-			retry++;
-			sleep(5);
-			close(fd);
-			continue;
-		}
-		rio_readinitb(&client, fd);
-		num = rio_readlineb(&client, buf1, sizeof(int));
-		if(num<=0)
-		{
-			printf("can not read retry %d\n",retry);
-			retry++;
-			sleep(5);
-			close(fd);
-			continue;
-		}
-		close(fd);
-		retry=0;
-	}
 }
 
 void* handle(void *Args)
@@ -190,7 +131,7 @@ void* handle(void *Args)
 		printf("%s %s %s %d\n",program_name,data_name,output,num);
 		selectNode(num,Task,&numActual);
 		printf("actual num node is %d\n",numActual);
-		fileSplit(data_name,numActual);
+		fileSeg(data_name,numActual);
 		for(i=0;i<numActual;i++)
 		{
 			allocateTask(i,Task[i],program_name,data_name,output);
@@ -298,7 +239,7 @@ int allocateTask(int taskid,struct clientNode client,char* program_name,char* da
 	close(connfd);
 }
 
-void fileSplit(char* file_name,int num)
+void fileDuplicate(char* file_name,int num)
 {
 	int i=0;
 	int rc=0;
@@ -321,6 +262,69 @@ void fileSplit(char* file_name,int num)
 	fclose(fp);
 }
 
+void *keepAlive(void *Args)
+{
+	SA clientaddr=*((SA*)Args);
+	int fd;
+	int num;
+	int buf1[SIZEMAX];
+	buf1[0]=KEEPALIVE;
+	buf1[1]=ntohs(clientaddr.sin_port);
+	rio_t client;
+	int retry=0;
+	while(1)
+	{
+		if(retry>MAXRETRY)
+		{
+			printf("retry time is over\n");
+			tableRemove(clientaddr);
+			return;
+		}
+		sleep(3);
+		if ((fd = socket(AF_INET, SOCK_STREAM, 0)) <= 0)
+		{
+			printf("fd error\n");
+			return;
+		}
+		if (connect(fd, (struct sockaddr *) &clientaddr, sizeof(SA)) < 0)
+		{
+			printf("connection error retry %d\n",retry);
+			retry++;
+			close(fd);
+			continue;
+		}
+		if(fd<=0)
+		{
+			printf("fd < 0 retry %d\n",retry);
+			retry++;
+			sleep(5);
+			close(fd);
+			continue;
+		}
+
+		num=Rio_writen(fd,(char*)buf1,2*sizeof(int));
+		if(num<=0)
+		{
+			printf("can not write retry %d\n",retry);
+			retry++;
+			sleep(5);
+			close(fd);
+			continue;
+		}
+		rio_readinitb(&client, fd);
+		num = rio_readlineb(&client, buf1, sizeof(int));
+		if(num<=0)
+		{
+			printf("can not read retry %d\n",retry);
+			retry++;
+			sleep(5);
+			close(fd);
+			continue;
+		}
+		close(fd);
+		retry=0;
+	}
+}
 void ip_convert(SA addr,char* addrs)
 {
 	int ip4=addr.sin_addr.s_addr;

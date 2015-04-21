@@ -19,7 +19,7 @@ int tableRemove(SA addr);
 int saEqual(SA addr1,SA addr2);
 void selectNode(int num,struct clientNode Task[SIZEMAX],int* numActual);
 int allocateTask(int taskid,struct clientNode client,char* program_name,char* data_name,char* output);
-void fileSplit(char* file_name,int num);
+void fileDuplicate(char* file_name,int num);
 void ip_convert(SA addr,char*);
 
 pthread_t beathearttid;
