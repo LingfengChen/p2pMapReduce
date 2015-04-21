@@ -1,0 +1,385 @@
+p;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=70" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1016.2Fj.scico.2007.07.001&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-stackoverflow-8"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-stackoverflow_8-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://stackoverflow.com/questions/3947889/mongodb-terrible-mapreduce-performance">"MongoDB: Terrible MapReduce Performance"</a>. Stack Overflow. October 16, 2010. <q>The MapReduce implementation in MongoDB has little to do with map reduce apparently. Because for all I read, it is single-threaded, while map-reduce is meant to be used highly parallel on a cluster. ... MongoDB MapReduce is single threaded on a single server...</q></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=MongoDB%3A+Terrible+MapReduce+Performance&amp;rft.date=October+16%2C+2010&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F3947889%2Fmongodb-terrible-mapreduce-performance&amp;rft.pub=Stack+Overflow&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-ullman-9"><span class="mw-cite-backlink">^ <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ullman_9-0"><span class="cite-accessibility-label">Jump up to: </span><sup><i><b>a</b></i></sup></a> <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ullman_9-1"><sup><i><b>b</b></i></sup></a> <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ullman_9-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation journal"><a href="https://en.wikipedia.org/wiki/Jeffrey_Ullman" title="Jeffrey Ullman">Ullman, J. D.</a> (2012). <a rel="nofollow" class="external text" href="http://xrds.acm.org/article.cfm?aid=2331053">"Designing good MapReduce algorithms"</a>. <i>XRDS: Crossroads, the ACM Magazine for Students</i> (<a href="https://en.wikipedia.org/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">Association for Computing Machinery</a>) <b>19</b>: 30. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F2331042.2331053">10.1145/2331042.2331053</a>. <span style="font-size:0.95em; font-size:90%; color:#555">(subscription required (<span title="Sources are not required to be available online. Online sources do not have to be freely available. The site may require a paid subscription." style="border-bottom:1px dotted;cursor:help">help</span>))</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Designing+good+MapReduce+algorithms&amp;rft.aufirst=J.+D.&amp;rft.aulast=Ullman&amp;rft.au=Ullman%2C+J.+D.&amp;rft.date=2012&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fxrds.acm.org%2Farticle.cfm%3Faid%3D2331053&amp;rft_id=info%3Adoi%2F10.1145%2F2331042.2331053&amp;rft.jtitle=XRDS%3A+Crossroads%2C+the+ACM+Magazine+for+Students&amp;rft.pages=30&amp;rft.pub=Association+for+Computing+Machinery&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=19" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F2331042.2331053&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-10"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web">Czajkowski, Grzegorz,; Marián Dvorský; Jerry Zhao; Michael Conley. <a rel="nofollow" class="external text" href="http://googleresearch.blogspot.com/2011/09/sorting-petabytes-with-mapreduce-next.html">"Sorting Petabytes with MapReduce - The Next Episode"</a>. Google<span class="reference-accessdate">. Retrieved <span class="nowrap">7 April</span> 2014</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Czajkowski%2C+Grzegorz%2C&amp;rft.aufirst=Grzegorz%2C&amp;rft.au=Jerry+Zhao&amp;rft.aulast=Czajkowski&amp;rft.au=Mari%C3%A1n+Dvorsk%C3%BD&amp;rft.au=Michael+Conley&amp;rft.btitle=Sorting+Petabytes+with+MapReduce+-+The+Next+Episode&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fgoogleresearch.blogspot.com%2F2011%2F09%2Fsorting-petabytes-with-mapreduce-next.html&amp;rft.pub=Google&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-11"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://research.google.com/archive/mapreduce-osdi04-slides/index-auto-0004.html">Example: Count word occurrences</a>. Research.google.com. Retrieved on 2013-09-18.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-12"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation journal">Bosagh Zadeh, Reza; Carlsson, Gunnar. <a rel="nofollow" class="external text" href="http://stanford.edu/~rezab/papers/dimsum.pdf">"Dimension Independent Matrix Square Using MapReduce"</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">12 July</span> 2014</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Bosagh+Zadeh%2C+Reza&amp;rft.au=Carlsson%2C+Gunnar&amp;rft.aufirst=Reza&amp;rft.aulast=Bosagh+Zadeh&amp;rft.btitle=Dimension+Independent+Matrix+Square+Using+MapReduce&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fstanford.edu%2F~rezab%2Fpapers%2Fdimsum.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-mrml-13"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-mrml_13-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a href="https://en.wikipedia.org/w/index.php?title=Cheng-Tao_Chu&action=edit&redlink=1" class="new" title="Cheng-Tao Chu (page does not exist)">Cheng-Tao Chu</a>; Sang Kyun Kim, Yi-An Lin, YuanYuan Yu, Gary Bradski, Andrew Ng, and <a href="https://en.wikipedia.org/wiki/Kunle_Olukotun" title="Kunle Olukotun">Kunle Olukotun</a>. <a rel="nofollow" class="external text" href="http://www.willowgarage.com/map-reduce-machine-learning-multicore">"Map-Reduce for Machine Learning on Multicore"</a>. NIPS 2006.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Cheng-Tao+Chu&amp;rft.aulast=Cheng-Tao+Chu&amp;rft.btitle=Map-Reduce+for+Machine+Learning+on+Multicore&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.willowgarage.com%2Fmap-reduce-machine-learning-multicore&amp;rft.pub=NIPS+2006&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span style="display:none;font-size:100%" class="error citation-comment">Cite uses deprecated parameter <code style="color:inherit; border:inherit; padding:inherit;">|coauthors=</code> (<a href="https://en.wikipedia.org/wiki/Help:CS1_errors#deprecated_params" title="Help:CS1 errors">help</a>)</span></span></li>
+<li id="cite_note-evalMR-14"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-evalMR_14-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Ranger, C.; Raghuraman, R.; Penmetsa, A.; Bradski, G.; Kozyrakis, C. (2007). "Evaluating MapReduce for Multi-core and Multiprocessor Systems". <i>2007 IEEE 13th International Symposium on High Performance Computer Architecture</i>. p.&nbsp;13. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1109%2FHPCA.2007.346181">10.1109/HPCA.2007.346181</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/1-4244-0804-0" title="Special:BookSources/1-4244-0804-0">1-4244-0804-0</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Evaluating+MapReduce+for+Multi-core+and+Multiprocessor+Systems&amp;rft.au=Bradski%2C+G.&amp;rft.aufirst=C.&amp;rft.au=Kozyrakis%2C+C.&amp;rft.aulast=Ranger&amp;rft.au=Penmetsa%2C+A.&amp;rft.au=Raghuraman%2C+R.&amp;rft.au=Ranger%2C+C.&amp;rft.btitle=2007+IEEE+13th+International+Symposium+on+High+Performance+Computer+Architecture&amp;rft.date=2007&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1109%2FHPCA.2007.346181&amp;rft.isbn=1-4244-0804-0&amp;rft.pages=13&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1109.2FHPCA.2007.346181&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-graphicsMR-15"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-graphicsMR_15-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">He, B.; Fang, W.; Luo, Q.; Govindaraju, N. K.; Wang, T. (2008). "Mars: a MapReduce framework on graphics processors". <a rel="nofollow" class="external text" href="http://wenbin.org/doc/papers/Wenbin08PACT.pdf"><i>Proceedings of the 17th international conference on Parallel architectures and compilation techniques - PACT '08</i></a> <span style="font-size:85%;">(PDF)</span>. p.&nbsp;260. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F1454115.1454152">10.1145/1454115.1454152</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/9781605582825" title="Special:BookSources/9781605582825">9781605582825</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Mars%3A+a+MapReduce+framework+on+graphics+processors&amp;rft.au=Fang%2C+W.&amp;rft.aufirst=B.&amp;rft.au=Govindaraju%2C+N.+K.&amp;rft.au=He%2C+B.&amp;rft.aulast=He&amp;rft.au=Luo%2C+Q.&amp;rft.au=Wang%2C+T.&amp;rft.btitle=Proceedings+of+the+17th+international+conference+on+Parallel+architectures+and+compilation+techniques+-+PACT+%2708&amp;rft.date=2008&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwenbin.org%2Fdoc%2Fpapers%2FWenbin08PACT.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F1454115.1454152&amp;rft.isbn=9781605582825&amp;rft.pages=260&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F1454115.1454152&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-tiledMR-16"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-tiledMR_16-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Chen, R.; Chen, H.; Zang, B. (2010). "Tiled-MapReduce: optimizing resource usages of data-parallel applications on multicore with tiling". <i>Proceedings of the 19th international conference on Parallel architectures and compilation techniques - PACT '10</i>. p.&nbsp;523. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F1854273.1854337">10.1145/1854273.1854337</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/9781450301787" title="Special:BookSources/9781450301787">9781450301787</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Tiled-MapReduce%3A+optimizing+resource+usages+of+data-parallel+applications+on+multicore+with+tiling&amp;rft.au=Chen%2C+H.&amp;rft.au=Chen%2C+R.&amp;rft.aufirst=R.&amp;rft.aulast=Chen&amp;rft.au=Zang%2C+B.&amp;rft.btitle=Proceedings+of+the+19th+international+conference+on+Parallel+architectures+and+compilation+techniques+-+PACT+%2710&amp;rft.date=2010&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1145%2F1854273.1854337&amp;rft.isbn=9781450301787&amp;rft.pages=523&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F1854273.1854337&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-gridMR-17"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-gridMR_17-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Tang, B.; Moca, M.; Chevalier, S.; He, H.; Fedak, G. (2010). "Towards MapReduce for Desktop Grid Computing". <a rel="nofollow" class="external text" href="http://graal.ens-lyon.fr/~gfedak/papers/xtremmapreduce.3pgcic10.pdf"><i>2010 International Conference on P2P, Parallel, Grid, Cloud and Internet Computing</i></a> <span style="font-size:85%;">(PDF)</span>. p.&nbsp;193. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1109%2F3PGCIC.2010.33">10.1109/3PGCIC.2010.33</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/978-1-4244-8538-3" title="Special:BookSources/978-1-4244-8538-3">978-1-4244-8538-3</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Towards+MapReduce+for+Desktop+Grid+Computing&amp;rft.au=Chevalier%2C+S.&amp;rft.au=Fedak%2C+G.&amp;rft.aufirst=B.&amp;rft.au=He%2C+H.&amp;rft.aulast=Tang&amp;rft.au=Moca%2C+M.&amp;rft.au=Tang%2C+B.&amp;rft.btitle=2010+International+Conference+on+P2P%2C+Parallel%2C+Grid%2C+Cloud+and+Internet+Computing&amp;rft.date=2010&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fgraal.ens-lyon.fr%2F~gfedak%2Fpapers%2Fxtremmapreduce.3pgcic10.pdf&amp;rft_id=info%3Adoi%2F10.1109%2F3PGCIC.2010.33&amp;rft.isbn=978-1-4244-8538-3&amp;rft.pages=193&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1109.2F3PGCIC.2010.33&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-volunteerMR-18"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-volunteerMR_18-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Lin, H.; Ma, X.; Archuleta, J.; Feng, W. C.; Gardner, M.; Zhang, Z. (2010). "MOON: MapReduce On Opportunistic eNvironments". <a rel="nofollow" class="external text" href="http://eprints.cs.vt.edu/archive/00001089/01/moon.pdf"><i>Proceedings of the 19th ACM International Symposium on High Performance Distributed Computing - HPDC '10</i></a> <span style="font-size:85%;">(PDF)</span>. p.&nbsp;95. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F1851476.1851489">10.1145/1851476.1851489</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/9781605589428" title="Special:BookSources/9781605589428">9781605589428</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=MOON%3A+MapReduce+On+Opportunistic+eNvironments&amp;rft.au=Archuleta%2C+J.&amp;rft.au=Feng%2C+W.+C.&amp;rft.aufirst=H.&amp;rft.au=Gardner%2C+M.&amp;rft.aulast=Lin&amp;rft.au=Lin%2C+H.&amp;rft.au=Ma%2C+X.&amp;rft.au=Zhang%2C+Z.&amp;rft.btitle=Proceedings+of+the+19th+ACM+International+Symposium+on+High+Performance+Distributed+Computing+-+HPDC+%2710&amp;rft.date=2010&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Feprints.cs.vt.edu%2Farchive%2F00001089%2F01%2Fmoon.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F1851476.1851489&amp;rft.isbn=9781605589428&amp;rft.pages=95&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F1851476.1851489&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-dynCloudMR-19"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-dynCloudMR_19-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation journal">Marozzo, F.; Talia, D.; Trunfio, P. (2012). <a rel="nofollow" class="external text" href="http://grid.deis.unical.it/papers/pdf/MarozzoTaliaTrunfioJCSS2012.pdf">"P2P-MapReduce: Parallel data processing in dynamic Cloud environments"</a> <span style="font-size:85%;">(PDF)</span>. <i><a href="https://en.wikipedia.org/wiki/Journal_of_Computer_and_System_Sciences" title="Journal of Computer and System Sciences">Journal of Computer and System Sciences</a></i> <b>78</b> (5): 1382. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1016%2Fj.jcss.2011.12.021">10.1016/j.jcss.2011.12.021</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=P2P-MapReduce%3A+Parallel+data+processing+in+dynamic+Cloud+environments&amp;rft.aufirst=F.&amp;rft.aulast=Marozzo&amp;rft.au=Marozzo%2C+F.&amp;rft.au=Talia%2C+D.&amp;rft.au=Trunfio%2C+P.&amp;rft.date=2012&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fgrid.deis.unical.it%2Fpapers%2Fpdf%2FMarozzoTaliaTrunfioJCSS2012.pdf&amp;rft_id=info%3Adoi%2F10.1016%2Fj.jcss.2011.12.021&amp;rft.issue=5&amp;rft.jtitle=Journal+of+Computer+and+System+Sciences&amp;rft.pages=1382&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=78" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1016.2Fj.jcss.2011.12.021&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-mobileMR-20"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-mobileMR_20-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Dou, A.; Kalogeraki, V.; Gunopulos, D.; Mielikainen, T.; Tuulos, V. H. (2010). "Misco: a MapReduce framework for mobile systems". <i>Proceedings of the 3rd International Conference on PErvasive Technologies Related to Assistive Environments - PETRA '10</i>. p.&nbsp;1. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F1839294.1839332">10.1145/1839294.1839332</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/9781450300711" title="Special:BookSources/9781450300711">9781450300711</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Misco%3A+a+MapReduce+framework+for+mobile+systems&amp;rft.au=Dou%2C+A.&amp;rft.aufirst=A.&amp;rft.au=Gunopulos%2C+D.&amp;rft.au=Kalogeraki%2C+V.&amp;rft.aulast=Dou&amp;rft.au=Mielikainen%2C+T.&amp;rft.au=Tuulos%2C+V.+H.&amp;rft.btitle=Proceedings+of+the+3rd+International+Conference+on+PErvasive+Technologies+Related+to+Assistive+Environments+-+PETRA+%2710&amp;rft.date=2010&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1145%2F1839294.1839332&amp;rft.isbn=9781450300711&amp;rft.pages=1&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F1839294.1839332&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-usage-21"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-usage_21-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.baselinemag.com/c/a/Infrastructure/How-Google-Works-1/5">"How Google Works"</a>. baselinemag.com. <q>As of October, Google was running about 3,000 computing jobs per day through MapReduce, representing thousands of machine-days, according to a presentation by Dean. Among other things, these batch routines analyze the latest Web pages and update Google's indexes.</q></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=How+Google+Works&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.baselinemag.com%2Fc%2Fa%2FInfrastructure%2FHow-Google-Works-1%2F5&amp;rft.pub=baselinemag.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-shark-22"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-shark_22-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://typicalprogrammer.com/?p=16">"Database Experts Jump the MapReduce Shark"</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=Database+Experts+Jump+the+MapReduce+Shark&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Ftypicalprogrammer.com%2F%3Fp%3D16&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-ddandms1-23"><span class="mw-cite-backlink">^ <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ddandms1_23-0"><span class="cite-accessibility-label">Jump up to: </span><sup><i><b>a</b></i></sup></a> <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ddandms1_23-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a href="https://en.wikipedia.org/wiki/David_DeWitt" title="David DeWitt">David DeWitt</a>; <a href="https://en.wikipedia.org/wiki/Michael_Stonebraker" title="Michael Stonebraker">Michael Stonebraker</a>. <a rel="nofollow" class="external text" href="http://craig-henderson.blogspot.com/2009/11/dewitt-and-stonebrakers-mapreduce-major.html">"MapReduce: A major step backwards"</a>. craig-henderson.blogspot.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-08-27</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=David+DeWitt&amp;rft.aulast=David+DeWitt&amp;rft.au=Michael+Stonebraker&amp;rft.btitle=MapReduce%3A+A+major+step+backwards&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fcraig-henderson.blogspot.com%2F2009%2F11%2Fdewitt-and-stonebrakers-mapreduce-major.html&amp;rft.pub=craig-henderson.blogspot.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-ApacheHiveWiki-24"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ApacheHiveWiki_24-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://cwiki.apache.org/confluence/display/Hive/Home">"Apache Hive - Index of - Apache Software Foundation"</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=Apache+Hive+-+Index+of+-+Apache+Software+Foundation&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fcwiki.apache.org%2Fconfluence%2Fdisplay%2FHive%2FHome&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-YSmartPaper-25"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-YSmartPaper_25-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web">Rubao Lee, Tian Luo, Yin Huai, Fusheng Wang, Yongqiang He and Xiaodong Zhang. <a rel="nofollow" class="external text" href="http://www.cse.ohio-state.edu/hpcs/WWW/HTML/publications/papers/TR-11-7.pdf">"YSmart: Yet Another SQL-to-MapReduce Translator"</a> <span style="font-size:85%;">(PDF)</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.aulast=Rubao+Lee%2C+Tian+Luo%2C+Yin+Huai%2C+Fusheng+Wang%2C+Yongqiang+He+and+Xiaodong+Zhang&amp;rft.au=Rubao+Lee%2C+Tian+Luo%2C+Yin+Huai%2C+Fusheng+Wang%2C+Yongqiang+He+and+Xiaodong+Zhang&amp;rft.btitle=YSmart%3A+Yet+Another+SQL-to-MapReduce+Translator&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.cse.ohio-state.edu%2Fhpcs%2FWWW%2FHTML%2Fpublications%2Fpapers%2FTR-11-7.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-HBase-26"><span class="mw-cite-backlink">^ <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-HBase_26-0"><span class="cite-accessibility-label">Jump up to: </span><sup><i><b>a</b></i></sup></a> <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-HBase_26-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://hbase.apache.org/">"HBase - HBase Home - Apache Software Foundation"</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=HBase+-+HBase+Home+-+Apache+Software+Foundation&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fhbase.apache.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-BigTablePaper-27"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-BigTablePaper_27-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://research.google.com/archive/bigtable-osdi06.pdf">"Bigtable: A Distributed Storage System for Structured Data"</a> <span style="font-size:85%;">(PDF)</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=Bigtable%3A+A+Distributed+Storage+System+for+Structured+Data&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fresearch.google.com%2Farchive%2Fbigtable-osdi06.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-gj1-28"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-gj1_28-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a href="https://en.wikipedia.org/w/index.php?title=Greg_Jorgensen&action=edit&redlink=1" class="new" title="Greg Jorgensen (page does not exist)">Greg Jorgensen</a>. <a rel="nofollow" class="external text" href="http://typicalprogrammer.com/?p=16">"Relational Database Experts Jump The MapReduce Shark"</a>. typicalprogrammer.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-11-11</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Greg+Jorgensen&amp;rft.aulast=Greg+Jorgensen&amp;rft.btitle=Relational+Database+Experts+Jump+The+MapReduce+Shark&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Ftypicalprogrammer.com%2F%3Fp%3D16&amp;rft.pub=typicalprogrammer.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-sigmod-29"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-sigmod_29-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web">Andrew Pavlo; E. Paulson, A. Rasin, D. J. Abadi, <a href="https://en.wikipedia.org/wiki/David_DeWitt" title="David DeWitt">D. J. Dewitt</a>, S. Madden, and <a href="https://en.wikipedia.org/wiki/Michael_Stonebraker" title="Michael Stonebraker">M. Stonebraker</a>. <a rel="nofollow" class="external text" href="http://database.cs.brown.edu/projects/mapreduce-vs-dbms/">"A Comparison of Approaches to Large-Scale Data Analysis"</a>. Brown University<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-01-11</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Andrew+Pavlo&amp;rft.aulast=Andrew+Pavlo&amp;rft.btitle=A+Comparison+of+Approaches+to+Large-Scale+Data+Analysis&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fdatabase.cs.brown.edu%2Fprojects%2Fmapreduce-vs-dbms%2F&amp;rft.pub=Brown+University&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span style="display:none;font-size:100%" class="error citation-comment">Cite uses deprecated parameter <code style="color:inherit; border:inherit; padding:inherit;">|coauthors=</code> (<a href="https://en.wikipedia.org/wiki/Help:CS1_errors#deprecated_params" title="Help:CS1 errors">help</a>)</span></span></li>
+<li id="cite_note-patent-30"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-patent_30-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=/netahtml/PTO/srchnum.htm&r=1&f=G&l=50&s1=7,650,331.PN.&OS=PN/7,650,331&RS=PN/7,650,331">US Patent 7,650,331: "System and method for efficient large-scale data processing "</a></span></li>
+<li id="cite_note-Curt_Monash-31"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-Curt_Monash_31-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a href="https://en.wikipedia.org/w/index.php?title=Curt_Monash&action=edit&redlink=1" class="new" title="Curt Monash (page does not exist)">Curt Monash</a>. <a rel="nofollow" class="external text" href="http://www.dbms2.com/2010/02/11/google-mapreduce-patent/">"More patent nonsense — Google MapReduce"</a>. dbms2.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-03-07</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Curt+Monash&amp;rft.aulast=Curt+Monash&amp;rft.btitle=More+patent+nonsense+%E2%80%94+Google+MapReduce&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.dbms2.com%2F2010%2F02%2F11%2Fgoogle-mapreduce-patent%2F&amp;rft.pub=dbms2.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-Clusterpoint-32"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-Clusterpoint_32-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.clusterpoint.com/">"Clusterpoint XML database"</a>. clusterpoint.com.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=Clusterpoint+XML+database&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.clusterpoint.com&amp;rft.pub=clusterpoint.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-MongoDB-33"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-MongoDB_33-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mongodb.org/">"MongoDB NoSQL database"</a>. 10gen.com.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=MongoDB+NoSQL+database&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.mongodb.org&amp;rft.pub=10gen.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-34"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation conference">Zaharia, Matei; Chowdhury, Mosharaf; Franklin, Michael; Shenker, Scott; Stoica, Ion (June 2010). <i><a href="https://en.wikipedia.org/wiki/Spark_(cluster_computing_framework)" title="Spark (cluster computing framework)" class="mw-redirect">Spark: Cluster Computing with Working Sets</a></i>. HotCloud 2010.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Chowdhury%2C+Mosharaf&amp;rft.aufirst=Matei&amp;rft.au=Franklin%2C+Michael&amp;rft.aulast=Zaharia&amp;rft.au=Shenker%2C+Scott&amp;rft.au=Stoica%2C+Ion&amp;rft.au=Zaharia%2C+Matei&amp;rft.btitle=Spark%3A+Cluster+Computing+with+Working+Sets&amp;rft.date=June+2010&amp;rft.genre=book&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+</ol>
+</div>
+<p>General references:</p>
+<div class="refbegin" style="">
+<ul>
+<li>Dean, Jeffrey &amp; Ghemawat, Sanjay (2004). <a rel="nofollow" class="external text" href="http://research.google.com/archive/mapreduce.html">"MapReduce: Simplified Data Processing on Large Clusters"</a>. Retrieved November 23, 2011.</li>
+<li>Matt Williams (2009). <a rel="nofollow" class="external text" href="http://wordflows.com/matt/2009/01/18/understanding-mapreduce/">"Understanding Map-Reduce"</a>. Retrieved April 13, 2011.</li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=22" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tbody><tr>
+<td class="mbox-image"><img alt="" src="./mapreduce_files/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376"></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="https://commons.wikimedia.org/wiki/Category:MapReduce" class="extiw" title="commons:Category:MapReduce">MapReduce</a></b></i>.</td>
+</tr>
+</tbody></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://mapreduce.sandia.gov/index.html">MapReduce-MPI</a> MapReduce-MPI Library</li>
+</ul>
+<dl>
+<dt>Papers</dt>
+</dl>
+<div class="refbegin" style="">
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.researchgate.net/publication/259226804_A_MapReduce_based_distributed_SVM_algorithm_for_binary_classification">"CloudSVM: Training an SVM Classifier in Cloud Computing Systems"</a>-paper by F. Ozgur Catak, M. Erdal Balaban, Springer, Lecture Notes in Computer Science,Pervasive Computing and Networked World 2012 from <a href="https://en.wikipedia.org/wiki/T%C3%9CB%C4%B0TAK" title="TÜBİTAK" class="mw-redirect">TÜBİTAK</a> and <a href="https://en.wikipedia.org/wiki/Istanbul_University" title="Istanbul University">Istanbul University</a></li>
+<li><a rel="nofollow" class="external text" href="http://dl.acm.org/citation.cfm?id=1996023.1996026">"A Hierarchical Framework for Cross-Domain MapReduce Execution"</a> — paper by Yuan Luo, Zhenhua Guo, Yiming Sun, Beth Plale, Judy Qiu; from <a href="https://en.wikipedia.org/wiki/Indiana_University" title="Indiana University">Indiana University</a> and Wilfred Li; from <a href="https://en.wikipedia.org/wiki/University_of_California,_San_Diego" title="University of California, San Diego">University of California, San Diego</a></li>
+<li><a rel="nofollow" class="external text" href="http://research.google.com/archive/sawzall.html">"Interpreting the Data: Parallel Analysis with Sawzall"</a> — paper by Rob Pike, Sean Dorward, Robert Griesemer, Sean Quinlan; from <a href="https://en.wikipedia.org/wiki/Google_Labs" title="Google Labs">Google Labs</a></li>
+<li><a rel="nofollow" class="external text" href="http://csl.stanford.edu/~christos/publications/2007.cmp_mapreduce.hpca.pdf">"Evaluating MapReduce for Multi-core and Multiprocessor Systems"</a> — paper by Colby Ranger, Ramanan Raghuraman, Arun Penmetsa, Gary Bradski, and Christos Kozyrakis; from <a href="https://en.wikipedia.org/wiki/Stanford_University" title="Stanford University">Stanford University</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dbms2.com/2008/08/26/why-mapreduce-matters-to-sql-data-warehousing/">"Why MapReduce Matters to SQL Data Warehousing"</a> — analysis related to the August, 2008 introduction of MapReduce/SQL integration by <a href="https://en.wikipedia.org/wiki/Aster_Data_Systems" title="Aster Data Systems">Aster Data Systems</a> and <a href="https://en.wikipedia.org/wiki/Greenplum" title="Greenplum">Greenplum</a></li>
+<li><a rel="nofollow" class="external text" href="http://pages.cs.wisc.edu/~dekruijf/docs/mapreduce-cell.pdf">"MapReduce for the Cell B.E. Architecture"</a> — paper by Marc de Kruijf and Karthikeyan Sankaralingam; from <a href="https://en.wikipedia.org/wiki/University_of_Wisconsin%E2%80%93Madison" title="University of Wisconsin–Madison">University of Wisconsin–Madison</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cse.ust.hk/catalac/users/saven/GPGPU/MapReduce/PACT08/171.pdf">"Mars: A MapReduce Framework on Graphics Processors"</a> — paper by Bingsheng He, Wenbin Fang, Qiong Luo, Naga K. Govindaraju, Tuyong Wang; from <a href="https://en.wikipedia.org/wiki/Hong_Kong_University_of_Science_and_Technology" title="Hong Kong University of Science and Technology">Hong Kong University of Science and Technology</a>; published in Proc. PACT 2008. It presents the design and implementation of MapReduce on graphics processors.</li>
+<li><a rel="nofollow" class="external text" href="http://www.springerlink.com/content/h17r882710314147/">"A Peer-to-Peer Framework for Supporting MapReduce Applications in Dynamic Cloud Environments"</a> — paper by Fabrizio Marozzo, Domenico Talia, Paolo Trunfio; from <a href="https://en.wikipedia.org/wiki/University_of_Calabria" title="University of Calabria">University of Calabria</a>; published in Cloud Computing: Principles, Systems and Applications, N. Antonopoulos, L. Gillam (Editors), chapt. 7, pp.&nbsp;113–125, Springer, 2010, <a href="https://en.wikipedia.org/wiki/Special:BookSources/9781849962407" class="internal mw-magiclink-isbn">ISBN 978-1-84996-240-7</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?doid=1247480.1247602">"Map-Reduce-Merge: Simplified Relational Data Processing on Large Clusters"</a> — paper by Hung-Chih Yang, Ali Dasdan, Ruey-Lung Hsiao, and D. Stott Parker; from <a href="https://en.wikipedia.org/wiki/Yahoo" title="Yahoo" class="mw-redirect">Yahoo</a> and <a href="https://en.wikipedia.org/wiki/UCLA" title="UCLA" class="mw-redirect">UCLA</a>; published in Proc. of ACM SIGMOD, pp.&nbsp;1029–1040, 2007. (This paper shows how to extend MapReduce for relational data processing.)</li>
+<li>FLuX: the <a rel="nofollow" class="external text" href="http://citeseer.ist.psu.edu/647742.html">Fault-tolerant</a>, <a rel="nofollow" class="external text" href="http://citeseer.ist.psu.edu/546646.html">Load Balancing</a> eXchange operator from <a href="https://en.wikipedia.org/wiki/UC_Berkeley" title="UC Berkeley" class="mw-redirect">UC Berkeley</a> provides an integration of partitioned parallelism with process pairs. This results in a more pipelined approach than Google's MapReduce with instantaneous failover, but with additional implementation cost.</li>
+<li><a rel="nofollow" class="external text" href="http://infolab.stanford.edu/~ullman/pub/mapred.pdf">"A New Computation Model for Rack-Based Computing"</a> — paper by Foto N. Afrati; Jeffrey D. Ullman; from <a href="https://en.wikipedia.org/wiki/Stanford_University" title="Stanford University">Stanford University</a>; Not published as of November 2009. This paper is an attempt to develop a general model in which one can compare algorithms for computing in an environment similar to what map-reduce expects.</li>
+<li><a rel="nofollow" class="external text" href="http://portal.acm.org/beta/citation.cfm?id=1723112.1723129">FPMR: MapReduce framework on FPGA</a>—paper by Yi Shan, Bo Wang, Jing Yan, Yu Wang, Ningyi Xu, Huazhong Yang (2010), in FPGA '10, Proceedings of the 18th annual ACM/SIGDA international symposium on Field programmable gate arrays.</li>
+<li><a rel="nofollow" class="external text" href="http://ipads.se.sjtu.edu.cn/lib/exe/fetch.php?media=publications:ostrich-pact10.pdf">"Tiled-MapReduce: Optimizing Resource Usages of Data-parallel Applications on Multicore with Tiling"</a>—paper by Rong Chen, Haibo Chen and Binyu Zang from <a href="https://en.wikipedia.org/wiki/Fudan_University" title="Fudan University">Fudan University</a>; published in Proc. PACT 2010. It presents the Tiled-MapReduce programming model which optimizes resource usages of MapReduce applications on multicore environment using tiling strategy.</li>
+<li><a rel="nofollow" class="external text" href="http://ipads.se.sjtu.edu.cn/lib/exe/fetch.php?media=publications:ostrich-taco13.pdf">"Tiled MapReduce: Efficient and Flexible MapReduce Processing on Multicore with Tiling"</a>—paper by Rong Chen, and Haibo Chen from <a href="https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University" title="Shanghai Jiao Tong University">Shanghai Jiao Tong University</a>; published in ACM TACO, 10(1), 2013. It extends the earlier version of Ostrich to support several usage scenarios such as online and incremental computing on multicore machines.</li>
+<li><a rel="nofollow" class="external text" href="http://dx.doi.org/10.1016/j.jpdc.2010.12.004">"Scheduling divisible MapReduce computations "</a>—paper by Joanna Berlińska from <a href="https://en.wikipedia.org/wiki/Adam_Mickiewicz_University" title="Adam Mickiewicz University" class="mw-redirect">Adam Mickiewicz University</a> and Maciej Drozdowski from <a href="https://en.wikipedia.org/wiki/Poznan_University_of_Technology" title="Poznan University of Technology" class="mw-redirect">Poznan University of Technology</a>; Journal of Parallel and Distributed Computing 71 (2011) 450-459, <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1016%2Fj.jpdc.2010.12.004">10.1016/j.jpdc.2010.12.004</a>. It presents scheduling and performance model of MapReduce.</li>
+<li><a rel="nofollow" class="external text" href="http://stratosphere.eu/files/NephelePACTs_10.pdf">"Nephele/PACTs: A Programming Model and Execution Framework for Web-Scale Analytical Processing"</a>—paper by D. Battré, S. Ewen, F. Hueske, O. Kao, V. Markl, and D. Warneke from <a rel="nofollow" class="external text" href="http://www.tu-berlin.de/menue/home/parameter/en/">TU Berlin</a> published in Proc. of ACM SoCC 2010. The paper introduces the PACT programming model, a generalization of MapReduce, developed in the <a rel="nofollow" class="external text" href="http://www.stratosphere.eu/">Stratosphere</a> research project.</li>
+<li><a rel="nofollow" class="external text" href="http://stratosphere.eu/files/ComparingMapReduceAndPACTs_11.pdf">"MapReduce and PACT - Comparing Data Parallel Programming Models"</a>—paper by A. Alexandrov, S. Ewen, M. Heimel, F. Hueske, O. Kao, V. Markl, E. Nijkamp, and D. Warneke from <a rel="nofollow" class="external text" href="http://www.tu-berlin.de/menue/home/parameter/en/">TU Berlin</a> published in Proc. of BTW 2011.</li>
+</ul>
+</div>
+<dl>
+<dt>Books</dt>
+</dl>
+<div class="refbegin" style="">
+<ul>
+<li>Jimmy Lin and Chris Dyer. <a rel="nofollow" class="external text" href="http://www.umiacs.umd.edu/~jimmylin/book.html">"Data-Intensive Text Processing with MapReduce"</a> (manuscript)</li>
+</ul>
+</div>
+<dl>
+<dt>Educational courses</dt>
+</dl>
+<div class="refbegin" style="">
+<ul>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/edu/submissions/mapreduce-minilecture/listing.html">Cluster Computing and MapReduce</a> course from <a rel="nofollow" class="external text" href="http://code.google.com/edu/">Google Code University</a> contains video lectures and related course materials from a series of lectures that was taught to Google software engineering interns during the Summer of 2007.</li>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/edu/submissions/mapreduce/listing.html">MapReduce in a Week</a> course from <a rel="nofollow" class="external text" href="http://code.google.com/edu/">Google Code University</a> contains a comprehensive introduction to MapReduce including lectures, reading material, and programming assignments.</li>
+<li><a rel="nofollow" class="external text" href="http://mr.iap.2008.googlepages.com/">MapReduce course</a>, taught by engineers of <a href="https://en.wikipedia.org/wiki/Google" title="Google">Google</a> Boston, part of 2008 Independent Activities Period at <a href="https://en.wikipedia.org/wiki/MIT" title="MIT" class="mw-redirect">MIT</a>.</li>
+</ul>
+</div>
+<dl>
+<dt>Bibliography</dt>
+</dl>
+<div class="refbegin" style="">
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.columbia.edu/~ak2834/mapreduce.html">MapReduce bibliography by A. Kamil, 2010</a></li>
+</ul>
+</div>
+<table class="navbox" style="border-spacing:0">
+<tbody><tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit" id="collapsibleTable0">
+<tbody><tr>
+<th scope="col" class="navbox-title" colspan="2"><span class="collapseButton">[<a id="collapseButton0" href="https://en.wikipedia.org/wiki/MapReduce#">hide</a>]</span>
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Google_Inc." title="Template:Google Inc."><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Google_Inc." title="Template talk:Google Inc."><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Google_Inc.&action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:110%"><a href="https://en.wikipedia.org/wiki/Google" title="Google">Google</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Outline_of_Google" title="Outline of Google">Overview</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/History_of_Google" title="History of Google">History</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Google" title="List of mergers and acquisitions by Google">List of mergers and acquisitions</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_products" title="List of Google products">Products</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Criticism_of_Google" title="Criticism of Google">Criticism</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Censorship_by_Google" title="Censorship by Google">Censorship</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_domains" title="List of Google domains">Domains</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_hoaxes_and_easter_eggs" title="List of Google hoaxes and easter eggs">Hoaxes</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Don%27t_be_evil" title="Don&#39;t be evil">Don't be evil</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Advertising</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AdMob" title="AdMob">AdMob</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adscape" title="Adscape">Adscape</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AdSense" title="AdSense">AdSense</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AdWords" title="AdWords">AdWords</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Analytics" title="Google Analytics">Analytics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Certification_Program" title="Google Certification Program">Certification Program</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DoubleClick" title="DoubleClick">DoubleClick</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DoubleClick_for_Publishers" title="DoubleClick for Publishers">DoubleClick for Publishers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Wallet" title="Google Wallet">Wallet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Communication</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Alerts" title="Google Alerts">Alerts</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Apps_Script" title="Google Apps Script">Apps Script</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Calendar" title="Google Calendar">Calendar</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Contacts" title="Google Contacts">Contacts</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Friend_Connect" title="Google Friend Connect">Friend Connect</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gmail" title="Gmail">Gmail</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/History_of_Gmail" title="History of Gmail">history</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gmail_interface" title="Gmail interface">interface</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google%2B" title="Google+">Google+</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Groups" title="Google Groups">Groups</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Hangouts" title="Google Hangouts">Hangouts</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Inbox" title="Google Inbox">Inbox</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Sync" title="Google Sync">Sync</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Text-to-Speech" title="Google Text-to-Speech">Text-to-Speech</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Translate" title="Google Translate">Translate</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_transliteration" title="Google transliteration">Transliteration</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Voice" title="Google Voice">Voice</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Software</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome" title="Google Chrome">Chrome</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_for_Android" title="Google Chrome for Android">for Android</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_for_iOS" title="Google Chrome for iOS" class="mw-redirect">for iOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chrome_Web_Store" title="Chrome Web Store">Chrome Web Store</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_Apps" title="Google Chrome Apps">Apps</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_extension" title="Google Chrome extension">Extensions</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Cloud_Print" title="Google Cloud Print">Cloud Print</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Earth" title="Google Earth">Earth</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Sky" title="Google Sky">Sky</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Moon" title="Google Moon">Moon</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Mars" title="Google Mars">Mars</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Gadgets" title="Google Gadgets">Gadgets</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Goggles" title="Google Goggles">Goggles</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_IME" title="Google IME">IME</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Pinyin" title="Google Pinyin">Pinyin</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Japanese_Input" title="Google Japanese Input">Japanese</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Keep" title="Google Keep">Keep</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_News_%26_Weather" title="Google News &amp; Weather">News &amp; Weather</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Now" title="Google Now">Now</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Picasa" title="Picasa">Picasa</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenRefine" title="OpenRefine">OpenRefine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Toolbar" title="Google Toolbar">Toolbar</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Google_platform" title="Google platform">Platforms</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Account" title="Google Account">Account</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Android_version_history" title="Android version history">version history</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_software_development" title="Android software development">software development</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_Auto" title="Android Auto">Android Auto</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_TV" title="Android TV">Android TV</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_Wear" title="Android Wear">Android Wear</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_App_Engine" title="Google App Engine">App Engine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Apps_for_Work" title="Google Apps for Work">Apps for Work</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Classroom" title="Google Classroom">Classroom</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Authenticator" title="Google Authenticator">Authenticator</a></li>
+<li><a href="https://en.wikipedia.org/wiki/BigTable" title="BigTable">BigTable</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zygote_Body" title="Zygote Body" class="mw-redirect">Body</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Books" title="Google Books">Books</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Books_Library_Project" title="Google Books Library Project">Library Project</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Caja_project" title="Caja project">Caja</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Cardboard" title="Google Cardboard">Cardboard</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chromecast" title="Chromecast">Chromecast</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chrome_OS" title="Chrome OS">Chrome OS</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Chromebit" title="Chromebit">Chromebit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chromebook" title="Chromebook">Chromebook</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chromebox" title="Chromebox">Chromebox</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chrome_Zone" title="Chrome Zone">Chrome Zone</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Compute_Engine" title="Google Compute Engine">Compute Engine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Contact_Lens" title="Google Contact Lens">Contact Lens</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Custom_Search" title="Google Custom Search">Custom Search</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dart_(programming_language)" title="Dart (programming language)">Dart</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Earth_Engine" title="Google Earth Engine">Earth Engine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Fit" title="Google Fit">Fit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Glass" title="Google Glass">Glass</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_File_System" title="Google File System">GFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Apps_Marketplace" title="Google Apps Marketplace">Marketplace</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Native_Client" title="Google Native Client">Native Client</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Nexus" title="Google Nexus">Nexus</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenSocial" title="OpenSocial">OpenSocial</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play" title="Google Play">Play</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play_Books" title="Google Play Books">Books</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play_Games" title="Google Play Games">Games</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play_Music" title="Google Play Music">Music</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play_Newsstand" title="Google Play Newsstand">Newsstand</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Public_DNS" title="Google Public DNS">Public DNS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Questions_and_Answers" title="Google Questions and Answers">Q &amp; A</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Wallet" title="Google Wallet">Wallet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Development tools</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_APIs" title="Google APIs">AJAX APIs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/App_Inventor_for_Android" title="App Inventor for Android">App Inventor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Closure_Tools" title="Google Closure Tools">Closure Tools</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Developers" title="Google Developers">Developers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Gadgets_API" title="Google Gadgets API">Gadgets API</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GData" title="GData">GData</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Googlebot" title="Googlebot">Googlebot</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Guava" title="Google Guava">Guava</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Guice" title="Google Guice">Guice</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_platform#Software" title="Google platform">GWS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" title="Keyhole Markup Language">KML</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Kythe" title="Google Kythe">Kythe</a></li>
+<li><strong class="selflink">MapReduce</strong></li>
+<li><a href="https://en.wikipedia.org/wiki/Sitemaps" title="Sitemaps">Sitemaps</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Storage" title="Google Storage">Storage</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Summer_of_Code" title="Google Summer of Code">Summer of Code</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Web_Toolkit" title="Google Web Toolkit">Web Toolkit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Webmaster_Tools" title="Google Webmaster Tools">Webmaster Tools</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Website_Optimizer" title="Google Website Optimizer">Website Optimizer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Swiffy" title="Google Swiffy">Swiffy</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Publishing</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Blogger_(service)" title="Blogger (service)">Blogger</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Bookmarks" title="Google Bookmarks">Bookmarks</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Drive" title="Google Drive">Drive</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Docs" title="Google Docs" class="mw-redirect">Docs, Sheets, Slides</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Domains" title="Google Domains">Google Domains</a></li>
+<li><a href="https://en.wikipedia.org/wiki/FeedBurner" title="FeedBurner">FeedBurner</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Map_Maker" title="Google Map Maker">Map Maker</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Panoramio" title="Panoramio">Panoramio</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Picasa#Picasa_Web_Albums" title="Picasa">Picasa Web Albums</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Sites" title="Google Sites">Sites (JotSpot)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/YouTube" title="YouTube">YouTube</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Vevo" title="Vevo">Vevo</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Zagat" title="Zagat">Zagat</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Google_Search" title="Google Search">Search</a> (<a href="https://en.wikipedia.org/wiki/Timeline_of_Google_Search" title="Timeline of Google Search">timeline</a>)</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Search_Appliance" title="Google Search Appliance">Appliance</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Audio_Indexing" title="Google Audio Indexing">Audio</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Blog_Search" title="Google Blog Search">Blog Search</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Books" title="Google Books">Books</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Finance" title="Google Finance">Finance</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Flights" title="Google Flights">Flights</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Images" title="Google Images">Images</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Maps" title="Google Maps">Maps</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Street_View" title="Google Street View">Street View</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Competition_of_Google_Street_View" title="Competition of Google Street View" class="mw-redirect">Competition</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Locations_of_Google_Street_View" title="Locations of Google Street View" class="mw-redirect">Locations</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Street_View_privacy_concerns" title="Google Street View privacy concerns">Privacy concerns</a></li>

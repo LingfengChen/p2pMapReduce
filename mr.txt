@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://en.wikipedia.org/wiki/MapReduce -->
+<html lang="en" dir="ltr" class="client-js ve-not-available"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>MapReduce - Wikipedia, the free encyclopedia</title>
+<meta name="generator" content="MediaWiki 1.26wmf1">
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/MapReduce">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit">
+<link rel="edit" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit">
+<link rel="apple-touch-icon" href="https://bits.wikimedia.org/apple-touch/wikipedia.png">
+<link rel="shortcut icon" href="https://bits.wikimedia.org/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://en.wikipedia.org/w/api.php?action=rsd">
+<link rel="alternate" hreflang="x-default" href="./mapreduce_files/mapreduce.html">
+<link rel="copyright" href="https://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom">
+<link rel="canonical" href="http://en.wikipedia.org/wiki/MapReduce">
+<link rel="stylesheet" href="https://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.geshi.language.sql%7Cext.geshi.local%7Cext.rtlcite%2Cwikihiero%2CwikimediaBadges%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles%7Cwikibase.client.init&only=styles&skin=vector&*">
+<style>
+.tipsy{padding:5px;position:absolute;z-index:100000;cursor:default}.tipsy-inner{padding:5px 8px 4px 8px; background-color:#ffffff;border:solid 1px #a7d7f9;color:black;max-width:15em;border-radius:4px; }.tipsy-arrow{position:absolute;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEX5+fmn1/n///9s6BFKAAAAAXRSTlMAQObYZgAAACpJREFUCB1jZBD4wMiQMoeRcUU4I9uSaYxSE54xZjn8AtMgPkgcJA9UBwAeDw1Qrb3pVAAAAABJRU5ErkJggg==) no-repeat top left;background:url(//bits.wikimedia.org/static-1.26wmf1/resources/src/jquery.tipsy/images/tipsy.png?2015-04-08T18:15:00Z) no-repeat top left!ie;width:11px;height:6px} .tipsy-n .tipsy-arrow{top:0px;left:50%;margin-left:-5px} .tipsy-nw .tipsy-arrow{top:1px;left:10px} .tipsy-ne .tipsy-arrow{top:1px;right:10px} .tipsy-s .tipsy-arrow{bottom:0px;left:50%;margin-left:-5px;background-position:bottom left} .tipsy-sw .tipsy-arrow{bottom:0px;left:10px;background-position:bottom left} .tipsy-se .tipsy-arrow{bottom:0px;right:10px;background-position:bottom left} .tipsy-e .tipsy-arrow{top:50%;margin-top:-5px;right:1px;width:5px;height:11px;background-position:top right} .tipsy-w .tipsy-arrow{top:50%;margin-top:-5px;left:0px;width:6px;height:11px} .tipsy{font-size:0.8em}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ececcd68600217cc991511d10f4961a6 */
+@media print{#centralNotice{display:none}}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ddb0c98a055632ae8e349c9cf48ac703 */
+.uls-menu a{cursor:pointer}.uls-menu.callout .caret-before{border-top:20px solid transparent;border-right:20px solid #C9C9C9;border-bottom:20px solid transparent;display:inline-block;left:-21px;top:30px;position:absolute}.uls-menu.callout .caret-after{border-top:20px solid transparent;border-right:20px solid #FCFCFC;border-bottom:20px solid transparent;display:inline-block;left:-20px;top:30px;position:absolute}.uls-ui-languages button{width:23%;text-overflow:ellipsis;margin-right:4%}button.uls-more-languages{width:auto}.settings-title{font-size:11pt}.settings-text{color:#555555;font-size:9pt}div.display-settings-block:hover .settings-text{color:#252525}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:22d1681fa868b4ff4fbcb1ec1e58a9ea */
+@-webkit-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}@-o-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-o-transform:translateY(-20px)}100%{opacity:1;-o-transform:translateY(0)}}@keyframes centralAuthPPersonalAnimation{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.centralAuthPPersonalAnimation{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:centralAuthPPersonalAnimation;-moz-animation-name:centralAuthPPersonalAnimation;-o-animation-name:centralAuthPPersonalAnimation;animation-name:centralAuthPPersonalAnimation}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:0dcacc990dd02e7db9669ab3090b80f1 */
+.ve-activated #toc,.ve-activated #siteNotice,.ve-activated .mw-indicators, .ve-active #bodyContent > :not(#siteSub):not(#contentSub):not(.ve-ui-mwTocWidget),.ve-activated #t-print,.ve-activated #t-permalink,.ve-activated #p-coll-print_export,.ve-activated #t-cite,.ve-activating .ve-ui-surface,.ve-deactivating .ve-ui-surface{display:none}.ve-activated #bodyContent,.ve-activated #firstHeading,.ve-activated #siteSub,.ve-activated #contentSub{opacity:0.6;pointer-events:none}.ve-activated #firstHeading{cursor:default} .ve-activated #content{position:relative}.ve-init-mw-viewPageTarget-loading-overlay{position:absolute;left:0;right:0;z-index:1;margin-top:-0.5em}.ve-init-mw-viewPageTarget-progress{border:1px solid #347bff;background:#fff;height:0.75em;border-radius:2px;overflow:hidden;margin:0 25%}.ve-init-mw-viewPageTarget-progress-bar{width:0;height:0.75em;background:#347bff} .mw-editsection{white-space:nowrap; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555}.ve-tabmessage-appendix{font-size:0.7em;vertical-align:top;line-height:1.43em;padding-left:0.5em; background-image:none !important;display:inline !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:98428ddb6d82ef9bb6dcf1d1c4437f25 */</style><style>
+.cite-accessibility-label{position:absolute !important; top:-99999px;clip:rect(1px 1px 1px 1px); clip:rect(1px,1px,1px,1px);padding:0 !important;border:0 !important;height:1px !important;width:1px !important;overflow:hidden}.mw-cite-backlink,.cite-accessibility-label{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} ol.references li:target,sup.reference:target{background-color:#def; background-color:rgba(0,127,255,0.133)}@media print{.mw-cite-backlink{display:none}}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:2970940d33044e6aa6a620ce3c93c662 */
+.referencetooltip{position:absolute;list-style:none;list-style-image:none;opacity:0;font-size:10px;margin:0;z-index:5;padding:0}.referencetooltip li{border:#080086 2px solid;max-width:260px;padding:10px 8px 13px 8px;margin:0px;background-color:#F7F7F7;box-shadow:2px 4px 2px rgba(0,0,0,0.3);-moz-box-shadow:2px 4px 2px rgba(0,0,0,0.3);-webkit-box-shadow:2px 4px 2px rgba(0,0,0,0.3)}.referencetooltip li+li{margin-left:7px;margin-top:-2px;border:0;padding:0;height:3px;width:0px;background-color:transparent;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;border-top:12px #080086 solid;border-right:7px transparent solid;border-left:7px transparent solid}.referencetooltip>li+li::after{content:'';border-top:8px #F7F7F7 solid;border-right:5px transparent solid;border-left:5px transparent solid;margin-top:-12px;margin-left:-5px;z-index:1;height:0px;width:0px;display:block}.client-js body .referencetooltip li li{border:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;height:auto;width:auto;margin:auto;padding:0;position:static}.RTflipped{padding-top:13px}.referencetooltip.RTflipped li+li{position:absolute;top:2px;border-top:0;border-bottom:12px #080086 solid}.referencetooltip.RTflipped li+li::after{border-top:0;border-bottom:8px #F7F7F7 solid;position:absolute;margin-top:7px}.RTsettings{float:right;height:24px;width:24px;cursor:pointer;background-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Gear_icon.svg/24px-Gear_icon.svg.png);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/7/77/Gear_icon.svg);margin-top:-9px;margin-right:-7px;-webkit-transition:opacity 0.15s;-moz-transition:opacity 0.15s;-o-transition:opacity 0.15s;-ms-transition:opacity 0.15s;transition:opacity 0.15s;opacity:0.6;filter:alpha(opacity=60)}.RTsettings:hover{opacity:1;filter:alpha(opacity=100)}.RTTarget{border:#080086 2px solid}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:1a7de28fa04cd61435c75627cef69e87 */
+.skin-vector li.GA,.skin-monobook li.GA,.skin-modern li.GA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/4/42/Monobook-bullet-ga.png)} .skin-vector li.FA,.skin-monobook li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/d/d4/Monobook-bullet-star.png)}.skin-modern li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Modern-bullet-star.svg/9px-Modern-bullet-star.svg.png)}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:22ca6c0fc9d0923a196f8a3aec796994 */
+.wp-teahouse-question-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}#wp-th-question-ask{float:right}.wp-teahouse-ask a.external{background-image:none !important}.wp-teahouse-respond-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}.wp-th-respond{float:right}.wp-teahouse-respond a.external{background-image:none !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:8614dfa7ef847fc9bfcc2d1c9f720197 */
+#p-lang .uls-settings-trigger{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAgCAQAAACI54EcAAAAAnNCSVQICFXsRgQAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAABWklEQVQoz42RwWrCQBBAc/PkyXiQfpEXobKzEsipCkKh5CBUhBBmaWrw6j/oIQr6VeaSXzDpZDbZ1CWVMhBm5zGT2X1O6fwdv1L0saTwLajmar0d4JHh6XuEofqooVpiQcU7ozbeGWJklXVEGrrcWWKOCUXOeYEuQeXhQaNdv/rPrl/jFH3HjEnM1klTa2FsYNzCBV45zfa9Cu17mPH5gm903A7rhW60d0Rf7opf9D03nVf50jCwyjxHrZvnCzCkR0sZndFVK/y0Hl7NGC46rTxV9hRKH0oope0T5nL9OhDHCsJpOhKhaHyKJRRUvDMyIbRPiB7LdWifnsudJeSQUOScF17lU3pw0GjCPid9jWUqfceMMT6pu6610PiE2ECxgCun2Zh9jnuQ8fkiK58wrBe60d4RfXWf9ik2XVeR2icEFuA5svEJgQinI5kyOnuuWAnbJ8z42f7r8wfhovZYX3llNQAAAABJRU5ErkJggg==) no-repeat right top;background:transparent url(//bits.wikimedia.org/static-1.26wmf1/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.png?2015-04-08T18:20:00Z) no-repeat right top!ie;background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2214%22%20height%3D%2232%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M14%209.3V6.73l-1.575-.264c-.117-.44-.292-.848-.496-1.2l.93-1.285-1.81-1.84-1.31.908c-.38-.205-.79-.38-1.196-.497L8.284%201H5.716l-.263%201.578c-.437.117-.816.293-1.196.497L2.975%202.17%201.137%203.98l.934%201.287c-.2.38-.376.79-.493%201.228L0%206.73V9.3l1.575.264c.117.438.292.818.496%201.198l-.93%201.315L2.95%2013.89l1.312-.938c.38.205.787.38%201.224.497L5.746%2015h2.566l.263-1.578c.408-.117.817-.293%201.196-.497l1.315.935%201.81-1.812-.935-1.315c.203-.38.38-.76.495-1.2L14%209.303zm-7%201.404c-1.488%200-2.683-1.2-2.683-2.69S5.542%205.327%207%205.327c1.458%200%202.683%201.198%202.683%202.69%200%201.49-1.195%202.688-2.683%202.688z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23808080%22%2F%3E%3Cuse%20transform%3D%22translate%280%2016%29%22%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E%0A);background-image:-webkit-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.26wmf1/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2015-04-08T18:20:00Z)!ie;background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2214%22%20height%3D%2232%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M14%209.3V6.73l-1.575-.264c-.117-.44-.292-.848-.496-1.2l.93-1.285-1.81-1.84-1.31.908c-.38-.205-.79-.38-1.196-.497L8.284%201H5.716l-.263%201.578c-.437.117-.816.293-1.196.497L2.975%202.17%201.137%203.98l.934%201.287c-.2.38-.376.79-.493%201.228L0%206.73V9.3l1.575.264c.117.438.292.818.496%201.198l-.93%201.315L2.95%2013.89l1.312-.938c.38.205.787.38%201.224.497L5.746%2015h2.566l.263-1.578c.408-.117.817-.293%201.196-.497l1.315.935%201.81-1.812-.935-1.315c.203-.38.38-.76.495-1.2L14%209.303zm-7%201.404c-1.488%200-2.683-1.2-2.683-2.69S5.542%205.327%207%205.327c1.458%200%202.683%201.198%202.683%202.69%200%201.49-1.195%202.688-2.683%202.688z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23808080%22%2F%3E%3Cuse%20transform%3D%22translate%280%2016%29%22%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E%0A);background-image:linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.26wmf1/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2015-04-08T18:20:00Z)!ie;height:16px;width:14px;float:right;cursor:pointer}.skin-vector #p-lang .uls-settings-trigger{ margin-top:3px}#p-lang .uls-settings-trigger:hover{background-position:right -16px}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:36d7c94037c7da31031f385d8d1ef54c */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}  .mw-content-ltr .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr .mw-collapsible-toggle{float:right} .mw-content-rtl .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl .mw-collapsible-toggle{float:left}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle,.mw-content-ltr caption .mw-collapsible-toggle,.mw-content-rtl caption .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr caption .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle,.mw-content-ltr li .mw-collapsible-toggle,.mw-content-rtl li .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr li .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:e1ffd603cbaaa5f1a36e0d13fe843535 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:f8d0c6895ce3ae14434c16b8fca59432 */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(//bits.wikimedia.org/static-1.26wmf1/resources/src/mediawiki.action/images/green-checkmark.png?2015-04-08T18:15:00Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:e1381a35fe112415e5a410da6b521eb7 */
+.column-break-inside-avoid{-webkit-column-break-inside:avoid;page-break-inside:avoid;break-inside:avoid-column}.mw-ui-icon{position:relative;min-height:1.4em;min-width:1.4em}.mw-ui-icon.mw-ui-icon-element{text-indent:-999px;overflow:hidden;width:3.4em;min-width:3.4em;max-width:3.4em}.mw-ui-icon.mw-ui-icon-element:before{left:0;right:0;position:absolute;margin:0 1em}.mw-ui-icon.mw-ui-icon-after:after,.mw-ui-icon.mw-ui-icon-before:before,.mw-ui-icon.mw-ui-icon-element:before{background-position:50% 50%;float:left;display:block;background-repeat:no-repeat;background-size:100% auto;min-height:1.4em;content:''}.mw-ui-icon.mw-ui-icon-before:before{position:relative;width:1.4em;margin-right:1em}.mw-ui-icon.mw-ui-icon-after:after{position:relative;float:right;width:1.4em;margin-left:1em}.mw-ui-icon-ok.mw-ui-icon:after,.mw-ui-icon-ok.mw-ui-icon:before{background-image:url(//bits.wikimedia.org/static-1.26wmf1/resources/src/mediawiki.ui/components/images/ok.png?2015-04-08T18:15:00Z);background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%3E%3Cpath%20d%3D%22M18.125%201.813l-10.5%2010.75-3.844-3.75L0%2012.719l7.72%207.452L22%205.625z%22%20fill%3D%22%23f0f0f0%22%2F%3E%3C%2Fsvg%3E%0A);background-image:-webkit-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.26wmf1/resources/src/mediawiki.ui/components/images/ok.svg?2015-04-08T18:15:00Z)!ie;background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%3E%3Cpath%20d%3D%22M18.125%201.813l-10.5%2010.75-3.844-3.75L0%2012.719l7.72%207.452L22%205.625z%22%20fill%3D%22%23f0f0f0%22%2F%3E%3C%2Fsvg%3E%0A);background-image:linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.26wmf1/resources/src/mediawiki.ui/components/images/ok.svg?2015-04-08T18:15:00Z)!ie;background-image:-o-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.26wmf1/resources/src/mediawiki.ui/components/images/ok.png?2015-04-08T18:15:00Z)}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:cdba61b70f706c8eaf042c369659b0d6 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */
+.mw-mmv-overlay{position:fixed;top:0px;left:0px;right:0px;bottom:0px;z-index:1000;background-color:#000000}body.mw-mmv-lightbox-open{overflow-y:auto}body.mw-mmv-lightbox-open #mw-page-base,body.mw-mmv-lightbox-open #mw-head-base,body.mw-mmv-lightbox-open #mw-navigation,body.mw-mmv-lightbox-open #content,body.mw-mmv-lightbox-open #footer,body.mw-mmv-lightbox-open #globalWrapper // monobook{ display:none}body.mw-mmv-lightbox-open > *{ display:none}body.mw-mmv-lightbox-open > .mw-mmv-overlay,body.mw-mmv-lightbox-open > .mw-mmv-wrapper{display:block}.mw-mmv-filepage-buttons{margin-top:5px}.mw-mmv-filepage-buttons .mw-mmv-view-expanded,.mw-mmv-filepage-buttons .mw-mmv-view-config{display:block}.mw-mmv-filepage-buttons .mw-mmv-view-expanded.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3C%21--%20Created%20with%20Inkscape%20%28http%3A%2F%2Fwww.inkscape.org%2F%29%20--%3E%0A%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20width%3D%22100%25%22%0A%20%20%20height%3D%22100%25%22%0A%20%20%20viewBox%3D%220%200%201024%20768%22%0A%20%20%20id%3D%22Layer_1%22%0A%20%20%20xml%3Aspace%3D%22preserve%22%3E%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata17%22%3E%3Crdf%3ARDF%3E%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%3C%2Fcc%3AWork%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cdefs%0A%20%20%20%20%20id%3D%22defs15%22%20%2F%3E%3Cg%0A%20%20%20%20%20id%3D%22g3%22%3E%3Cpolygon%0A%20%20%20%20%20%20%20points%3D%22851.2%2C71.6%20690.7%2C232.1%20650.6%2C191.8%20641%2C356.6%20805.8%2C347.3%20765.5%2C306.9%20926%2C146.4%20984.5%2C204.9%20997.6%2C0%20792.7%2C13.1%20%22%0A%20%20%20%20%20%20%20id%3D%22polygon5%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3Cpolygon%0A%20%20%20%20%20%20%20points%3D%22769.6%2C89.3%20611.9%2C89.3%20682.8%2C160.1%20690.7%2C167.6%20%22%0A%20%20%20%20%20%20%20id%3D%22polygon7%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3Cpath%0A%20%20%20%20%20%20%20d%3D%22m%20643.6%2C402.2%20-51.2%2C3%203%2C-51.2%209.4%2C-164.4%205.8%2C-100.3%20H%2026.4%20V%20768%20H%20909.5%20V%20387%20l%20-100.9%2C5.8%20-165%2C9.4%20z%20M%20813.9%2C678%20H%20113.6%20l%20207.2%2C-270.2%2031.5%2C-12.9%20195.7%2C204.9%20105.9%2C-63.2%20159.8%2C140.8%200.2%2C0.6%200%2C0%20z%22%0A%20%20%20%20%20%20%20id%3D%22path9%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3Cpolygon%0A%20%20%20%20%20%20%20points%3D%22909.5%2C386.1%20909.5%2C228%20830.4%2C306.9%20838.2%2C314.8%20%22%0A%20%20%20%20%20%20%20id%3D%22polygon11%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);background-image:url(//bits.wikimedia.org/static-1.26wmf1/extensions/MultimediaViewer/resources/mmv/img/expand.svg?2015-04-08T18:18:20Z)!ie}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3C%21--%20Created%20with%20Inkscape%20%28http%3A%2F%2Fwww.inkscape.org%2F%29%20--%3E%0A%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20width%3D%22100%25%22%0A%20%20%20height%3D%22100%25%22%0A%20%20%20viewBox%3D%220%200%201024%20768%22%0A%20%20%20id%3D%22Layer_1%22%0A%20%20%20xml%3Aspace%3D%22preserve%22%3E%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata9%22%3E%3Crdf%3ARDF%3E%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%3C%2Fcc%3AWork%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cdefs%0A%20%20%20%20%20id%3D%22defs7%22%20%2F%3E%3Cpath%0A%20%20%20%20%20d%3D%22M%20897%2C454.6%20V%20313.4%20L%20810.4%2C299%20c%20-6.4%2C-23.3%20-16%2C-45.7%20-27.3%2C-65.8%20L%20833.6%2C161.8%20734.2%2C61.6%20662.8%2C112.1%20C%20641.9%2C100.9%20620.3%2C91.2%20597%2C84.8%20L%20582.6%2C-1%20H%20441.4%20L%20427%2C85.6%20c%20-23.3%2C6.4%20-45.7%2C16%20-65.8%2C27.3%20L%20289.8%2C62.4%20189.5%2C161.9%20240%2C233.3%20c%20-11.2%2C20.9%20-20.9%2C42.5%20-27.3%2C66.6%20L%20127%2C313.4%20v%20141.2%20l%2085.8%2C14.4%20c%206.4%2C23.3%2016%2C45.7%2027.3%2C66.6%20l%20-50.5%2C71.4%2099.5%2C99.5%2071.4%2C-50.5%20c%2020.9%2C11.2%2042.5%2C20.9%2066.6%2C27.3%20l%2014.4%2C85.8%20h%20141.2%20l%2014.4%2C-86.6%20c%2023.3%2C-6.4%2045.7%2C-16%2065.8%2C-27.3%20l%2071.4%2C50.5%2099.5%2C-99.5%20-50.5%2C-71.4%20c%2011.2%2C-20.9%2020.9%2C-42.5%2027.3%2C-66.6%20L%20897%2C454.6%20z%20m%20-385%2C77%20C%20430.2%2C531.6%20364.4%2C465%20364.4%2C384%20364.4%2C302.2%20431%2C236.4%20512%2C236.4%20c%2081%2C0%20147.6%2C65.8%20147.6%2C147.6%200%2C81.8%20-65.8%2C147.6%20-147.6%2C147.6%20z%22%0A%20%20%20%20%20id%3D%22path3%22%0A%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3C%2Fsvg%3E);background-image:url(//bits.wikimedia.org/static-1.26wmf1/extensions/MultimediaViewer/resources/mmv/img/gear_gray.svg?2015-04-08T18:18:20Z)!ie;opacity:0.75}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before:hover{opacity:1}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:e00ca84bab45092d5d5f2a35d46a7178 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="https://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=site&only=styles&skin=vector&*">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3904d24a08aa08f6a68dc338f9be277e */</style>
+<script src="./mapreduce_files/load.php"></script><script src="./mapreduce_files/load(1).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"MapReduce","wgTitle":"MapReduce","wgCurRevisionId":657182448,"wgRevisionId":657182448,"wgArticleId":1702875,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages containing links to subscription-only content","Pages containing cite templates with deprecated parameters","All articles with unsourced statements","Articles with unsourced statements from February 2015","Commons category with local link same as on Wikidata","Google software","Parallel computing","Distributed computing architecture","Articles with example code"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"MapReduce","wgRelevantArticleId":1702875,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":false,"publish":false},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr"},"wikilove-recipient":"","wikilove-anon":0,"wgGatherShouldShowTutorial":true,"wgPoweredByHHVM":true,"wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgBetaFeaturesFeatures":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q567759"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:a5c52c063dc436c1ca7c9f456936a5e9 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","mmv.head","ext.imageMetrics.head","ext.visualEditor.viewPageTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script><script src="./mapreduce_files/load(2).php"></script>
+<link rel="dns-prefetch" href="https://meta.wikimedia.org/">
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.26wmf1/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-MapReduce skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><div id="centralNotice"></div><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">MapReduce</h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="https://en.wikipedia.org/wiki/MapReduce#mw-head">navigation</a>, 					<a href="https://en.wikipedia.org/wiki/MapReduce#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>MapReduce</b> is a <a href="https://en.wikipedia.org/wiki/Programming_model" title="Programming model" class="mw-redirect">programming model</a> and an associated implementation for processing and generating large data sets with a <a href="https://en.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">parallel</a>, <a href="https://en.wikipedia.org/wiki/Distributed_computing" title="Distributed computing">distributed</a> algorithm on a <a href="https://en.wikipedia.org/wiki/Cluster_(computing)" title="Cluster (computing)" class="mw-redirect">cluster</a>.<sup id="cite_ref-1" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-2"><span>[</span>2<span>]</span></a></sup> Conceptually similar approaches have been very well known since 1995 with the <a href="https://en.wikipedia.org/wiki/Message_Passing_Interface" title="Message Passing Interface">Message Passing Interface</a> <sup id="cite_ref-3" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-3"><span>[</span>3<span>]</span></a></sup> standard having reduce <sup id="cite_ref-4" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-4"><span>[</span>4<span>]</span></a></sup> and scatter operations.<sup id="cite_ref-5" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>A MapReduce program is composed of a <a href="https://en.wikipedia.org/wiki/Map_(parallel_pattern)" title="Map (parallel pattern)"><b>Map()</b></a> <a href="https://en.wikipedia.org/wiki/Procedure_(computing)" title="Procedure (computing)" class="mw-redirect">procedure</a> that performs filtering and sorting (such as sorting students by first name into queues, one queue for each name) and a <b>Reduce()</b> procedure that performs a summary operation (such as counting the number of students in each queue, yielding name frequencies). The "MapReduce System" (also called "infrastructure" or "framework") orchestrates the processing by <a href="https://en.wikipedia.org/wiki/Marshalling_(computer_science)" title="Marshalling (computer science)">marshalling</a> the distributed servers, running the various tasks in parallel, managing all communications and data transfers between the various parts of the system, and providing for <a href="https://en.wikipedia.org/wiki/Redundancy_(engineering)" title="Redundancy (engineering)">redundancy</a> and <a href="https://en.wikipedia.org/wiki/Fault-tolerant_computer_system" title="Fault-tolerant computer system">fault tolerance</a>.</p>
+<p>The model is inspired by the <a href="https://en.wikipedia.org/wiki/Map_(higher-order_function)" title="Map (higher-order function)">map</a> and <a href="https://en.wikipedia.org/wiki/Fold_(higher-order_function)" title="Fold (higher-order function)">reduce</a> functions commonly used in <a href="https://en.wikipedia.org/wiki/Functional_programming" title="Functional programming">functional programming</a>,<sup id="cite_ref-map_6-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-map-6"><span>[</span>6<span>]</span></a></sup> although their purpose in the MapReduce framework is not the same as in their original forms.<sup id="cite_ref-7" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-7"><span>[</span>7<span>]</span></a></sup> The key contributions of the MapReduce framework are not the actual map and reduce functions, but the scalability and fault-tolerance achieved for a variety of applications by optimizing the execution engine once. As such, a <a href="https://en.wikipedia.org/wiki/Single-threaded" title="Single-threaded" class="mw-redirect">single-threaded</a> implementation of MapReduce (such as <a href="https://en.wikipedia.org/wiki/MongoDB" title="MongoDB">MongoDB</a>) will usually not be faster than a traditional (non-MapReduce) implementation, any gains are usually only seen with <a href="https://en.wikipedia.org/wiki/Multi-threaded" title="Multi-threaded" class="mw-redirect">multi-threaded</a> implementations.<sup id="cite_ref-stackoverflow_8-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-stackoverflow-8"><span>[</span>8<span>]</span></a></sup> The use of this model is beneficial only when the optimized distributed shuffle operation (which reduces network communication cost) and fault tolerance features of the MapReduce framework come into play. Optimizing the communication cost is essential to a good MapReduce algorithm.<sup id="cite_ref-ullman_9-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-ullman-9"><span>[</span>9<span>]</span></a></sup></p>
+<p>MapReduce <a href="https://en.wikipedia.org/wiki/Library_(software)" title="Library (software)" class="mw-redirect">libraries</a> have been written in many programming languages, with different levels of optimization. A popular <a href="https://en.wikipedia.org/wiki/Open-source_software" title="Open-source software">open-source</a> implementation that has support for distributed shuffles is part of <a href="https://en.wikipedia.org/wiki/Apache_Hadoop" title="Apache Hadoop">Apache Hadoop</a>. The name MapReduce originally referred to the proprietary <a href="https://en.wikipedia.org/wiki/Google" title="Google">Google</a> technology, but has since been <a href="https://en.wikipedia.org/wiki/Generic_trademark" title="Generic trademark">genericized</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+<span class="toctoggle">&nbsp;[<a href="https://en.wikipedia.org/wiki/MapReduce#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="https://en.wikipedia.org/wiki/MapReduce#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="https://en.wikipedia.org/wiki/MapReduce#Logical_view"><span class="tocnumber">2</span> <span class="toctext">Logical view</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="https://en.wikipedia.org/wiki/MapReduce#Examples"><span class="tocnumber">2.1</span> <span class="toctext">Examples</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="https://en.wikipedia.org/wiki/MapReduce#Dataflow"><span class="tocnumber">3</span> <span class="toctext">Dataflow</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="https://en.wikipedia.org/wiki/MapReduce#Input_reader"><span class="tocnumber">3.1</span> <span class="toctext">Input reader</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="https://en.wikipedia.org/wiki/MapReduce#Map_function"><span class="tocnumber">3.2</span> <span class="toctext">Map function</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="https://en.wikipedia.org/wiki/MapReduce#Partition_function"><span class="tocnumber">3.3</span> <span class="toctext">Partition function</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="https://en.wikipedia.org/wiki/MapReduce#Comparison_function"><span class="tocnumber">3.4</span> <span class="toctext">Comparison function</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="https://en.wikipedia.org/wiki/MapReduce#Reduce_function"><span class="tocnumber">3.5</span> <span class="toctext">Reduce function</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="https://en.wikipedia.org/wiki/MapReduce#Output_writer"><span class="tocnumber">3.6</span> <span class="toctext">Output writer</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="https://en.wikipedia.org/wiki/MapReduce#Performance_considerations"><span class="tocnumber">4</span> <span class="toctext">Performance considerations</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="https://en.wikipedia.org/wiki/MapReduce#Distribution_and_reliability"><span class="tocnumber">5</span> <span class="toctext">Distribution and reliability</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="https://en.wikipedia.org/wiki/MapReduce#Uses"><span class="tocnumber">6</span> <span class="toctext">Uses</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="https://en.wikipedia.org/wiki/MapReduce#Criticism"><span class="tocnumber">7</span> <span class="toctext">Criticism</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="https://en.wikipedia.org/wiki/MapReduce#Lack_of_novelty"><span class="tocnumber">7.1</span> <span class="toctext">Lack of novelty</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="https://en.wikipedia.org/wiki/MapReduce#Restricted_programming_framework"><span class="tocnumber">7.2</span> <span class="toctext">Restricted programming framework</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="https://en.wikipedia.org/wiki/MapReduce#Conferences_and_users_groups"><span class="tocnumber">8</span> <span class="toctext">Conferences and users groups</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="https://en.wikipedia.org/wiki/MapReduce#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="https://en.wikipedia.org/wiki/MapReduce#Implementations_of_MapReduce"><span class="tocnumber">9.1</span> <span class="toctext">Implementations of MapReduce</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="https://en.wikipedia.org/wiki/MapReduce#Related_concepts_and_software"><span class="tocnumber">9.2</span> <span class="toctext">Related concepts and software</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="https://en.wikipedia.org/wiki/MapReduce#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="https://en.wikipedia.org/wiki/MapReduce#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>MapReduce is a framework for processing <a href="https://en.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">parallelizable</a> problems across huge datasets using a large number of computers (nodes), collectively referred to as a <a href="https://en.wikipedia.org/wiki/Computer_cluster" title="Computer cluster">cluster</a> (if all nodes are on the same local network and use similar hardware) or a <a href="https://en.wikipedia.org/wiki/Grid_Computing" title="Grid Computing" class="mw-redirect">grid</a> (if the nodes are shared across geographically and administratively distributed systems, and use more heterogenous hardware). Processing can occur on data stored either in a <a href="https://en.wikipedia.org/wiki/Filesystem" title="Filesystem" class="mw-redirect">filesystem</a> (unstructured) or in a <a href="https://en.wikipedia.org/wiki/Database" title="Database">database</a> (structured). MapReduce can take advantage of locality of data, processing it on or near the storage assets in order to reduce the distance over which it must be transmitted.</p>
+<ul>
+<li><b>"Map" step:</b> Each worker node applies the "map()" function to the local data, and writes the output to a temporary storage. A master node orchestrates that for redundant copies of input data, only one is processed.</li>
+<li><b>"Shuffle" step:</b> Worker nodes redistribute data based on the output keys (produced by the "map()" function), such that all data belonging to one key is located on the same worker node.</li>
+<li><b>"Reduce" step:</b> Worker nodes now process each group of output data, per key, in parallel.</li>
+</ul>
+<p>MapReduce allows for distributed processing of the map and reduction operations. Provided that each mapping operation is independent of the others, all maps can be performed in parallel&nbsp;– though in practice this is limited by the number of independent data sources and/or the number of CPUs near each source. Similarly, a set of 'reducers' can perform the reduction phase, provided that all outputs of the map operation that share the same key are presented to the same reducer at the same time, or that the reduction function is <a href="https://en.wikipedia.org/wiki/Associative_property" title="Associative property">associative</a>. While this process can often appear inefficient compared to algorithms that are more sequential, MapReduce can be applied to significantly larger datasets than "commodity" servers can handle&nbsp;– a large <a href="https://en.wikipedia.org/wiki/Server_farm" title="Server farm">server farm</a> can use MapReduce to sort a <a href="https://en.wikipedia.org/wiki/Petabyte" title="Petabyte">petabyte</a> of data in only a few hours.<sup id="cite_ref-10" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-10"><span>[</span>10<span>]</span></a></sup> The parallelism also offers some possibility of recovering from partial failure of servers or storage during the operation: if one mapper or reducer fails, the work can be rescheduled&nbsp;– assuming the input data is still available.</p>
+<p>Another way to look at MapReduce is as a 5-step parallel and distributed computation:</p>
+<ol>
+<li><b>Prepare the Map() input</b> – the "MapReduce system" designates Map processors, assigns the input key value <i>K1</i> that each processor would work on, and provides that processor with all the input data associated with that key value.</li>
+<li><b>Run the user-provided Map() code</b> – Map() is run exactly once for each <i>K1</i> key value, generating output organized by key values <i>K2</i>.</li>
+<li><b>"Shuffle" the Map output to the Reduce processors</b> – the MapReduce system designates Reduce processors, assigns the <i>K2</i> key value each processor should work on, and provides that processor with all the Map-generated data associated with that key value.</li>
+<li><b>Run the user-provided Reduce() code</b> – Reduce() is run exactly once for each <i>K2</i> key value produced by the Map step.</li>
+<li><b>Produce the final output</b> – the MapReduce system collects all the Reduce output, and sorts it by <i>K2</i> to produce the final outcome.</li>
+</ol>
+<p>These five steps can be Logically thought of as running in sequence – each step starts only after the previous step is completed – although in practice they can be interleaved as long as the final result is not affected.</p>
+<p>In many situations, the input data might already be distributed (<a href="https://en.wikipedia.org/wiki/Shard_(database_architecture)" title="Shard (database architecture)">"sharded"</a>) among many different servers, in which case step 1 could sometimes be greatly simplified by assigning Map servers that would process the locally present input data. Similarly, step 3 could sometimes be sped up by assigning Reduce processors that are as close as possible to the Map-generated data they need to process.</p>
+<h2><span class="mw-headline" id="Logical_view">Logical view</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=2" title="Edit section: Logical view">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <i>Map</i> and <i>Reduce</i> functions of <i>MapReduce</i> are both defined with respect to data structured in (key, value) pairs. <i>Map</i> takes one pair of data with a type in one <a href="https://en.wikipedia.org/wiki/Data_domain" title="Data domain">data domain</a>, and returns a list of pairs in a different domain:</p>
+<p><code>Map(k1,v1)</code> → <code>list(k2,v2)</code></p>
+<p>The <i>Map</i> function is applied in parallel to every pair in the input dataset. This produces a list of pairs for each call. After that, the MapReduce framework collects all pairs with the same key from all lists and groups them together, creating one group for each key.</p>
+<p>The <i>Reduce</i> function is then applied in parallel to each group, which in turn produces a collection of values in the same domain:</p>
+<p><code>Reduce(k2, list (v2))</code> → <code>list(v3)</code></p>
+<p>Each <i>Reduce</i> call typically produces either one value v3 or an empty return, though one call is allowed to return more than one value. The returns of all calls are collected as the desired result list.</p>
+<p>Thus the MapReduce framework transforms a list of (key, value) pairs into a list of values. This behavior is different from the typical functional programming map and reduce combination, which accepts a list of arbitrary values and returns one single value that combines <i>all</i> the values returned by map.</p>
+<p>It is <a href="https://en.wikipedia.org/wiki/Necessity_and_sufficiency" title="Necessity and sufficiency">necessary but not sufficient</a> to have implementations of the map and reduce abstractions in order to implement MapReduce. Distributed implementations of MapReduce require a means of connecting the processes performing the Map and Reduce phases. This may be a <a href="https://en.wikipedia.org/wiki/Distributed_file_system" title="Distributed file system" class="mw-redirect">distributed file system</a>. Other options are possible, such as direct streaming from mappers to reducers, or for the mapping processors to serve up their results to reducers that query them.</p>
+<h3><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=3" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The prototypical MapReduce example counts the appearance of each word in a set of documents:<sup id="cite_ref-11" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-11"><span>[</span>11<span>]</span></a></sup></p>
+<pre><b>function</b> <u>map</u>(String name, String document):
+  <i>// name: document name</i>
+  <i>// document: document contents</i>
+  <b>for each</b> word w <b>in</b> document:
+    emit (w, 1)
+
+<b>function</b> <u>reduce</u>(String word, Iterator partialCounts):
+  <i>// word: a word</i>
+  <i>// partialCounts: a list of aggregated partial counts</i>
+  sum = 0
+  <b>for each</b> pc <b>in</b> partialCounts:
+    sum += ParseInt(pc)
+  emit (word, sum)
+</pre>
+<p>Here, each document is split into words, and each word is counted by the <i>map</i> function, using the word as the result key. The framework puts together all the pairs with the same key and feeds them to the same call to <i>reduce</i>. Thus, this function just needs to sum all of its input values to find the total appearances of that word.</p>
+<p>As another example, imagine that for a database of 1.1 billion people, one would like to compute the average number of social contacts a person has according to age. In <a href="https://en.wikipedia.org/wiki/SQL" title="SQL">SQL</a>, such a query could be expressed as:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="sql source-sql">
+<pre class="de1">  <span class="kw1">SELECT</span> age<span class="sy0">,</span> AVG<span class="br0">(</span>contacts<span class="br0">)</span>
+    <span class="kw1">FROM</span> social<span class="sy0">.</span>person
+<span class="kw1">GROUP</span> <span class="kw1">BY</span> age
+<span class="kw1">ORDER</span> <span class="kw1">BY</span> age
+</pre></div>
+</div>
+<p>Using MapReduce, the <tt>K1</tt> key values could be the integers 1 through 1100, each representing a batch of 1 million records, the <tt>K2</tt> key value could be a person’s age in years, and this computation could be achieved using the following functions:</p>
+<pre><b>function</b> Map <b>is</b>
+    <b>input:</b> <b>integer</b> K1 between 1 and 1100, representing a batch of 1 million social.person records
+    <b>for each</b> social.person record in the K1 batch <b>do</b>
+        <b>let</b> Y be the person's age
+        <b>let</b> N be the number of contacts the person has
+        <b>produce one output record</b> (Y,(N,1))
+    <b>repeat</b>
+<b>end function</b>
+
+<b>function</b> Reduce <b>is</b>
+    <b>input:</b> age (in years) Y
+    <b>for each</b> input record (Y,(N,C)) <b>do</b>
+        Accumulate in S the sum of N*C
+        Accumulate in C<sub>new</sub> the sum of C
+    <b>repeat</b>
+    <b>let</b> A be S/C<sub>new</sub>
+    <b>produce one output record</b> (Y,(A,C<sub>new</sub>))
+<b>end function</b>
+</pre>
+<p>The MapReduce System would line up the 1100 Map processors, and would provide each with its corresponding 1 million input records. The Map step would produce 1.1 billion <tt>(Y,(N,1))</tt> records, with <tt>Y</tt> values ranging between, say, 8 and 103. The MapReduce System would then line up the 96 Reduce processors by performing shuffling operation of the key/value pairs due to the fact that we need average per age, and provide each with its millions of corresponding input records. The Reduce step would result in the much reduced set of only 96 output records <tt>(Y,A)</tt>, which would be put in the final result file, sorted by <tt>Y</tt>.</p>
+<p>The count info in the record is important if the processing is reduced more than one time. If we did not add the count of the records, the computed average would be wrong, for example:</p>
+<pre><i>-- map output #1: age, quantity of contacts</i>
+10, 9
+10, 9
+10, 9
+</pre>
+<pre><i>-- map output #2: age, quantity of contacts</i>
+10, 9
+10, 9
+</pre>
+<pre><i>-- map output #3: age, quantity of contacts</i>
+10, 10
+</pre>
+<p>If we reduce files <tt>#1</tt> and <tt>#2</tt>, we will have a new file with an average of 9 contacts for a 10 year old person ((9+9+9+9+9)/5):</p>
+<pre><i>-- reduce step #1: age, average of contacts</i>
+10, 9
+</pre>
+<p>If we reduce it with file <tt>#3</tt>, we lose the count of how many records we've already seen, so we end up with an average of 9.5 contacts for a 10 year old person ((9+10)/2), which is wrong. The correct answer is 9.17 ((9+9+9+9+9+10)/6).</p>
+<h2><span class="mw-headline" id="Dataflow">Dataflow</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=4" title="Edit section: Dataflow">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The frozen part of the MapReduce framework is a large distributed sort. The hot spots, which the application defines, are:</p>
+<ul>
+<li>an <i>input reader</i></li>
+<li>a <i>Map</i> function</li>
+<li>a <i>partition</i> function</li>
+<li>a <i>compare</i> function</li>
+<li>a <i>Reduce</i> function</li>
+<li>an <i>output writer</i></li>
+</ul>
+<h3><span class="mw-headline" id="Input_reader">Input reader</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=5" title="Edit section: Input reader">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <i>input reader</i> divides the input into appropriate size 'splits' (in practice typically 64&nbsp;MB to 128&nbsp;MB) and the framework assigns one split to each <i>Map</i> function. The <i>input reader</i> reads data from stable storage (typically a <a href="https://en.wikipedia.org/wiki/Distributed_file_system" title="Distributed file system" class="mw-redirect">distributed file system</a>) and generates key/value pairs.</p>
+<p>A common example will read a directory full of text files and return each line as a record.</p>
+<h3><span class="mw-headline" id="Map_function">Map function</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=6" title="Edit section: Map function">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <i>Map</i> function takes a series of key/value pairs, processes each, and generates zero or more output key/value pairs. The input and output types of the map can be (and often are) different from each other.</p>
+<p>If the application is doing a word count, the map function would break the line into words and output a key/value pair for each word. Each output pair would contain the word as the key and the number of instances of that word in the line as the value.</p>
+<h3><span class="mw-headline" id="Partition_function">Partition function</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=7" title="Edit section: Partition function">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Each <i>Map</i> function output is allocated to a particular <i>reducer</i> by the application's <i>partition</i> function for <a href="https://en.wikipedia.org/wiki/Sharding" title="Sharding" class="mw-redirect">sharding</a> purposes. The <i>partition</i> function is given the key and the number of reducers and returns the index of the desired <i>reducer</i>.</p>
+<p>A typical default is to <a href="https://en.wikipedia.org/wiki/Hash_function" title="Hash function">hash</a> the key and use the hash value <a href="https://en.wikipedia.org/wiki/Modulo_operation" title="Modulo operation">modulo</a> the number of <i>reducers</i>. It is important to pick a partition function that gives an approximately uniform distribution of data per shard for <a href="https://en.wikipedia.org/wiki/Load_balancing_(computing)" title="Load balancing (computing)">load-balancing</a> purposes, otherwise the MapReduce operation can be held up waiting for slow reducers (reducers assigned more than their share of data) to finish.</p>
+<p>Between the map and reduce stages, the data is <i>shuffled</i> (parallel-sorted / exchanged between nodes) in order to move the data from the map node that produced it to the shard in which it will be reduced. The shuffle can sometimes take longer than the computation time depending on network bandwidth, CPU speeds, data produced and time taken by map and reduce computations.</p>
+<h3><span class="mw-headline" id="Comparison_function">Comparison function</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=8" title="Edit section: Comparison function">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The input for each <i>Reduce</i> is pulled from the machine where the <i>Map</i> ran and sorted using the application's <i>comparison</i> function.</p>
+<h3><span class="mw-headline" id="Reduce_function">Reduce function</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=9" title="Edit section: Reduce function">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The framework calls the application's <i>Reduce</i> function once for each unique key in the sorted order. The <i>Reduce</i> can iterate through the values that are associated with that key and produce zero or more outputs.</p>
+<p>In the word count example, the <i>Reduce</i> function takes the input values, sums them and generates a single output of the word and the final sum.</p>
+<h3><span class="mw-headline" id="Output_writer">Output writer</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=10" title="Edit section: Output writer">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <i>Output Writer</i> writes the output of the <i>Reduce</i> to the stable storage.</p>
+<h2><span class="mw-headline" id="Performance_considerations">Performance considerations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=11" title="Edit section: Performance considerations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>MapReduce programs are not guaranteed to be fast. The main benefit of this programming model is to exploit the optimized shuffle operation of the platform, and only having to write the <i>Map</i> and <i>Reduce</i> parts of the program. In practice, the author of a MapReduce program however has to take the shuffle step into consideration; in particular the partition function and the amount of data written by the <i>Map</i> function can have a large impact on the performance. Additional modules such as the <i>Combiner</i> function can help to reduce the amount of data written to disk, and transmitted over the network.</p>
+<p>When designing a MapReduce algorithm, the author needs to choose a good tradeoff<sup id="cite_ref-ullman_9-1" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-ullman-9"><span>[</span>9<span>]</span></a></sup> between the computation and the communication costs. Communication cost often dominates the computation cost,<sup id="cite_ref-ullman_9-2" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-ullman-9"><span>[</span>9<span>]</span></a></sup> and many MapReduce implementations are designed to write all communication to distributed storage for crash recovery.</p>
+<p>For processes that complete fast, and where the data fits into main memory of a single machine or a small cluster, using a MapReduce framework usually is not effective: since these frameworks are designed to recover from the loss of whole nodes during the computation, they write interim results to distributed storage. This crash recovery is expensive, and only pays off when the computation involves many computers and a long runtime of the computation - a task that completes in seconds can just be restarted in the case of an error; and the likelihood of at least one machine failing grows quickly with the cluster size. On such problems, implementations keeping all data in memory and simply restarting a computation on node failures, or - when the data is small enough - non-distributed solutions will often be faster than a MapReduce system.</p>
+<h2><span class="mw-headline" id="Distribution_and_reliability">Distribution and reliability</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=12" title="Edit section: Distribution and reliability">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>MapReduce achieves reliability by parceling out a number of operations on the set of data to each node in the network. Each node is expected to report back periodically with completed work and status updates. If a node falls silent for longer than that interval, the master node (similar to the master server in the <a href="https://en.wikipedia.org/wiki/Google_File_System" title="Google File System">Google File System</a>) records the node as dead and sends out the node's assigned work to other nodes. Individual operations use <a href="https://en.wikipedia.org/wiki/Atomicity_(programming)" title="Atomicity (programming)" class="mw-redirect">atomic</a> operations for naming file outputs as a check to ensure that there are not parallel conflicting threads running. When files are renamed, it is possible to also copy them to another name in addition to the name of the task (allowing for <a href="https://en.wikipedia.org/wiki/Side-effect_(computer_science)" title="Side-effect (computer science)" class="mw-redirect">side-effects</a>).</p>
+<p>The reduce operations operate much the same way. Because of their inferior properties with regard to parallel operations, the master node attempts to schedule reduce operations on the same node, or in the same rack as the node holding the data being operated on. This property is desirable as it conserves bandwidth across the backbone network of the datacenter.</p>
+<p>Implementations are not necessarily highly reliable. For example, in older versions of <a href="https://en.wikipedia.org/wiki/Hadoop" title="Hadoop" class="mw-redirect">Hadoop</a> the <i>NameNode</i> was a <a href="https://en.wikipedia.org/wiki/Single_point_of_failure" title="Single point of failure">single point of failure</a> for the distributed filesystem. Later versions of Hadoop have high availability with an active/passive failover for the "NameNode."</p>
+<h2><span class="mw-headline" id="Uses">Uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=13" title="Edit section: Uses">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>MapReduce is useful in a wide range of applications, including distributed pattern-based searching, distributed sorting, web link-graph reversal, Singular Value Decomposition,<sup id="cite_ref-12" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-12"><span>[</span>12<span>]</span></a></sup> web access log stats, <a href="https://en.wikipedia.org/wiki/Inverted_index" title="Inverted index">inverted index</a> construction, <a href="https://en.wikipedia.org/wiki/Document_clustering" title="Document clustering">document clustering</a>, <a href="https://en.wikipedia.org/wiki/Machine_learning" title="Machine learning">machine learning</a>,<sup id="cite_ref-mrml_13-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-mrml-13"><span>[</span>13<span>]</span></a></sup> and <a href="https://en.wikipedia.org/wiki/Statistical_machine_translation" title="Statistical machine translation">statistical machine translation</a>. Moreover, the MapReduce model has been adapted to several computing environments like multi-core and many-core systems,<sup id="cite_ref-evalMR_14-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-evalMR-14"><span>[</span>14<span>]</span></a></sup><sup id="cite_ref-graphicsMR_15-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-graphicsMR-15"><span>[</span>15<span>]</span></a></sup><sup id="cite_ref-tiledMR_16-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-tiledMR-16"><span>[</span>16<span>]</span></a></sup> desktop grids,<sup id="cite_ref-gridMR_17-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-gridMR-17"><span>[</span>17<span>]</span></a></sup> volunteer computing environments,<sup id="cite_ref-volunteerMR_18-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-volunteerMR-18"><span>[</span>18<span>]</span></a></sup> dynamic cloud environments,<sup id="cite_ref-dynCloudMR_19-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-dynCloudMR-19"><span>[</span>19<span>]</span></a></sup> and mobile environments.<sup id="cite_ref-mobileMR_20-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-mobileMR-20"><span>[</span>20<span>]</span></a></sup></p>
+<p>At Google, MapReduce was used to completely regenerate Google's index of the <a href="https://en.wikipedia.org/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a>. It replaced the old <i>ad hoc</i> programs that updated the index and ran the various analyses.<sup id="cite_ref-usage_21-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-usage-21"><span>[</span>21<span>]</span></a></sup> Development at Google has since moved on to technologies such as Percolator, Flume and MillWheel that offer streaming operation and updates instead of batch processing, to allow integrating "live" search results without rebuilding the complete index.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2015)">citation needed</span></a></i>]</sup></p>
+<p>MapReduce's stable inputs and outputs are usually stored in a <a href="https://en.wikipedia.org/wiki/Distributed_file_system" title="Distributed file system" class="mw-redirect">distributed file system</a>. The transient data is usually stored on local disk and fetched remotely by the reducers.</p>
+<h2><span class="mw-headline" id="Criticism">Criticism</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=14" title="Edit section: Criticism">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Lack_of_novelty">Lack of novelty</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=15" title="Edit section: Lack of novelty">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="https://en.wikipedia.org/wiki/David_DeWitt" title="David DeWitt">David DeWitt</a> and <a href="https://en.wikipedia.org/wiki/Michael_Stonebraker" title="Michael Stonebraker">Michael Stonebraker</a>, computer scientists specializing in <a href="https://en.wikipedia.org/wiki/Parallel_database" title="Parallel database">parallel databases</a> and <a href="https://en.wikipedia.org/wiki/Shared-nothing_architecture" title="Shared-nothing architecture" class="mw-redirect">shared-nothing architectures</a>, have been critical of the breadth of problems that MapReduce can be used for.<sup id="cite_ref-shark_22-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-shark-22"><span>[</span>22<span>]</span></a></sup> They called its interface too low-level and questioned whether it really represents the <a href="https://en.wikipedia.org/wiki/Paradigm_shift" title="Paradigm shift">paradigm shift</a> its proponents have claimed it is.<sup id="cite_ref-ddandms1_23-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-ddandms1-23"><span>[</span>23<span>]</span></a></sup> They challenged the MapReduce proponents' claims of novelty, citing <a href="https://en.wikipedia.org/wiki/Teradata" title="Teradata">Teradata</a> as an example of <a href="https://en.wikipedia.org/wiki/Prior_art" title="Prior art">prior art</a> that has existed for over two decades. They also compared MapReduce programmers to <a href="https://en.wikipedia.org/wiki/CODASYL" title="CODASYL">Codasyl</a> programmers, noting both are "writing in a <a href="https://en.wikipedia.org/wiki/Low-level_programming_language" title="Low-level programming language">low-level language</a> performing low-level record manipulation."<sup id="cite_ref-ddandms1_23-1" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-ddandms1-23"><span>[</span>23<span>]</span></a></sup> MapReduce's use of input files and lack of <a href="https://en.wikipedia.org/wiki/Logical_schema" title="Logical schema">schema</a> support prevents the performance improvements enabled by common database system features such as <a href="https://en.wikipedia.org/wiki/B-tree" title="B-tree">B-trees</a> and <a href="https://en.wikipedia.org/wiki/Partition_(database)" title="Partition (database)">hash partitioning</a>, though projects such as <a href="https://en.wikipedia.org/wiki/Pig_(programming_language)" title="Pig (programming language)" class="mw-redirect">Pig (or PigLatin)</a>, <a href="https://en.wikipedia.org/wiki/Sawzall_(programming_language)" title="Sawzall (programming language)">Sawzall</a>, <a href="https://en.wikipedia.org/wiki/Apache_Hive" title="Apache Hive">Apache Hive</a>,<sup id="cite_ref-ApacheHiveWiki_24-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-ApacheHiveWiki-24"><span>[</span>24<span>]</span></a></sup> <a rel="nofollow" class="external text" href="http://ysmart.cse.ohio-state.edu/">YSmart</a>,<sup id="cite_ref-YSmartPaper_25-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-YSmartPaper-25"><span>[</span>25<span>]</span></a></sup> <a href="https://en.wikipedia.org/wiki/HBase" title="HBase" class="mw-redirect">HBase</a><sup id="cite_ref-HBase_26-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-HBase-26"><span>[</span>26<span>]</span></a></sup> and <a href="https://en.wikipedia.org/wiki/BigTable" title="BigTable">BigTable</a><sup id="cite_ref-HBase_26-1" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-HBase-26"><span>[</span>26<span>]</span></a></sup><sup id="cite_ref-BigTablePaper_27-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-BigTablePaper-27"><span>[</span>27<span>]</span></a></sup> are addressing some of these problems.</p>
+<p>Greg Jorgensen wrote an article rejecting these views.<sup id="cite_ref-gj1_28-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-gj1-28"><span>[</span>28<span>]</span></a></sup> Jorgensen asserts that DeWitt and Stonebraker's entire analysis is groundless as MapReduce was never designed nor intended to be used as a database.</p>
+<p>DeWitt and Stonebraker have subsequently published a detailed benchmark study in 2009 comparing performance of <a href="https://en.wikipedia.org/wiki/Hadoop" title="Hadoop" class="mw-redirect">Hadoop's</a> MapReduce and <a href="https://en.wikipedia.org/wiki/RDBMS" title="RDBMS" class="mw-redirect">RDBMS</a> approaches on several specific problems.<sup id="cite_ref-sigmod_29-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-sigmod-29"><span>[</span>29<span>]</span></a></sup> They concluded that relational databases offer real advantages for many kinds of data use, especially on complex processing or where the data is used across an enterprise, but that MapReduce may be easier for users to adopt for simple or one-time processing tasks.</p>
+<p>Google has been granted a patent on MapReduce.<sup id="cite_ref-patent_30-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-patent-30"><span>[</span>30<span>]</span></a></sup> However, there have been claims that this patent should not have been granted because MapReduce is too similar to existing products. For example, map and reduce functionality can be very easily implemented in <a href="https://en.wikipedia.org/wiki/Oracle_database" title="Oracle database" class="mw-redirect">Oracle's</a> <a href="https://en.wikipedia.org/wiki/PL/SQL" title="PL/SQL">PL/SQL</a> database oriented language<sup id="cite_ref-Curt_Monash_31-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-Curt_Monash-31"><span>[</span>31<span>]</span></a></sup> or is supported for developers transparently in distributed database architectures such as <a href="https://en.wikipedia.org/wiki/Clusterpoint" title="Clusterpoint">Clusterpoint</a> XML database<sup id="cite_ref-Clusterpoint_32-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-Clusterpoint-32"><span>[</span>32<span>]</span></a></sup> or <a href="https://en.wikipedia.org/wiki/MongoDB" title="MongoDB">MongoDB</a> NoSQL database.<sup id="cite_ref-MongoDB_33-0" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-MongoDB-33"><span>[</span>33<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Restricted_programming_framework">Restricted programming framework</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=16" title="Edit section: Restricted programming framework">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>MapReduce tasks must be written as acyclic dataflow programs, i.e. a stateless mapper followed by a stateless reducer, that are executed by a batch job scheduler. This paradigm makes repeated querying of datasets difficult and imposes limitations that are felt in fields such as <a href="https://en.wikipedia.org/wiki/Machine_learning" title="Machine learning">machine learning</a>, where iterative algorithms that revisit a single <a href="https://en.wikipedia.org/wiki/Working_set" title="Working set">working set</a> multiple times are the norm.<sup id="cite_ref-34" class="reference"><a href="https://en.wikipedia.org/wiki/MapReduce#cite_note-34"><span>[</span>34<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Conferences_and_users_groups">Conferences and users groups</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=17" title="Edit section: Conferences and users groups">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://graal.ens-lyon.fr/mapreduce/">The First International Workshop on MapReduce and its Applications (MAPREDUCE'10)</a> was held in June 2010 with the HPDC conference and OGF'29 meeting in Chicago, IL.</li>
+<li><a rel="nofollow" class="external text" href="http://mapreduce.meetup.com/">MapReduce Users Groups</a> around the world.</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=18" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Implementations_of_MapReduce">Implementations of MapReduce</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=19" title="Edit section: Implementations of MapReduce">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Apache_Hadoop" title="Apache Hadoop">Apache Hadoop</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Couchdb" title="Couchdb" class="mw-redirect">Couchdb</a></li>
+<li><a rel="nofollow" class="external text" href="http://discoproject.org/">Disco Project</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Infinispan" title="Infinispan">Infinispan</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MongoDB" title="MongoDB">MongoDB</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Riak" title="Riak">Riak</a></li>
+</ul>
+<h3><span class="mw-headline" id="Related_concepts_and_software">Related concepts and software</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=20" title="Edit section: Related concepts and software">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Algorithmic_skeleton" title="Algorithmic skeleton">Algorithmic skeleton</a> - A high-level parallel programming model for parallel and distributed computing</li>
+<li><a href="https://en.wikipedia.org/wiki/Apache_Accumulo" title="Apache Accumulo">Apache Accumulo</a> - Secure Big Table</li>
+<li><a href="https://en.wikipedia.org/wiki/Apache_Cassandra" title="Apache Cassandra">Apache Cassandra</a> - A column-oriented database that supports access from Hadoop'</li>
+<li><a href="https://en.wikipedia.org/wiki/Apache_Spark" title="Apache Spark">Apache Spark</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Big_data" title="Big data">Big data</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cloud_computing" title="Cloud computing">Cloud computing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Clusterpoint" title="Clusterpoint">Clusterpoint</a> - A scalable, high-performance, commercial software XML database</li>
+<li><a href="https://en.wikipedia.org/wiki/Datameer" title="Datameer">Datameer</a> Analytics Solution (DAS) - data source integration, storage, analytics engine and visualization</li>
+<li><a href="https://en.wikipedia.org/wiki/Divide_and_conquer_algorithm" title="Divide and conquer algorithm" class="mw-redirect">Divide and conquer algorithm</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fork%E2%80%93join_model" title="Fork–join model">Fork–join model</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HBase" title="HBase" class="mw-redirect">HBase</a> - <a href="https://en.wikipedia.org/wiki/BigTable" title="BigTable">BigTable</a>-model database</li>
+<li><a href="https://en.wikipedia.org/wiki/HPCC" title="HPCC">HPCC</a> - <a href="https://en.wikipedia.org/wiki/LexisNexis" title="LexisNexis">LexisNexis</a> Risk Solutions High Performance Computing Cluster</li>
+<li><a href="https://en.wikipedia.org/wiki/Hypertable" title="Hypertable">Hypertable</a> - HBase alternative</li>
+<li><a href="https://en.wikipedia.org/wiki/Nutch" title="Nutch">Nutch</a> - An effort to build an open source search engine based on <a href="https://en.wikipedia.org/wiki/Lucene" title="Lucene">Lucene</a> and Hadoop, also created by Doug Cutting</li>
+<li>Osprey, a fault tolerant MapReduce like system proposed in <a rel="nofollow" class="external text" href="http://db.csail.mit.edu/pubs/paper.pdf">Osprey: Implementing MapReduce-Style Fault Tolerance in a Shared-Nothing Distributed Database</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Parallelization_contract" title="Parallelization contract">parallelization contract</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pentaho" title="Pentaho">Pentaho</a> - Open source data integration (Kettle), analytics, reporting, visualization and predictive analytics directly from Hadoop nodes</li>
+<li><a href="https://en.wikipedia.org/wiki/Pig_(programming_language)" title="Pig (programming language)" class="mw-redirect">Apache Pig</a> A language and compiler to generate Hadoop programs</li>
+<li><a href="https://en.wikipedia.org/wiki/Programming_with_Big_Data_in_R" title="Programming with Big Data in R">Programming with Big Data in R</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sector/Sphere" title="Sector/Sphere">Sector/Sphere</a> - Open source distributed storage and processing</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=21" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Specific references:</p>
+<div class="reflist columns references-column-count references-column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-1"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://news.cnet.com/8301-10784_3-9955184-7.html">Google spotlights data center inner workings | Tech news blog - CNET News.com</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-2"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://static.googleusercontent.com/media/research.google.com/es/us/archive/mapreduce-osdi04.pdf">MapReduce: Simplified Data Processing on Large Clusters</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-3"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.mcs.anl.gov/research/projects/mpi/mpi-standard/mpi-report-2.0/mpi2-report.htm">http://www.mcs.anl.gov/research/projects/mpi/mpi-standard/mpi-report-2.0/mpi2-report.htm</a> MPI 2 standard</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-4"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://mpitutorial.com/tutorials/mpi-reduce-and-allreduce/">Tutorial on MPI Reduce and all reduce</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-5"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://mpitutorial.com/tutorials/performing-parallel-rank-with-mpi/">MPI tutorial Scatter and Gather</a></span></li>
+<li id="cite_note-map-6"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-map_6-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text">"Our abstraction is inspired by the map and reduce primitives present in Lisp and many other functional languages." -<a rel="nofollow" class="external text" href="http://research.google.com/archive/mapreduce.html">"MapReduce: Simplified Data Processing on Large Clusters"</a>, by Jeffrey Dean and Sanjay Ghemawat; from <a href="https://en.wikipedia.org/wiki/Google_Research" title="Google Research" class="mw-redirect">Google Research</a></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-7"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation journal">Lämmel, R. (2008). "Google's Map <i>Reduce</i> programming model — Revisited". <i>Science of Computer Programming</i> <b>70</b>: 1. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1016%2Fj.scico.2007.07.001">10.1016/j.scico.2007.07.001</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Google%27s+Map+Reduce+programming+model+%E2%80%94+Revisited&amp;rft.aufirst=R.&amp;rft.aulast=L%C3%A4mmel&amp;rft.au=L%C3%A4mmel%2C+R.&amp;rft.date=2008&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2Fj.scico.2007.07.001&amp;rft.jtitle=Science+of+Computer+Programming&amp;rft.pages=1&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=70" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1016.2Fj.scico.2007.07.001&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-stackoverflow-8"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-stackoverflow_8-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://stackoverflow.com/questions/3947889/mongodb-terrible-mapreduce-performance">"MongoDB: Terrible MapReduce Performance"</a>. Stack Overflow. October 16, 2010. <q>The MapReduce implementation in MongoDB has little to do with map reduce apparently. Because for all I read, it is single-threaded, while map-reduce is meant to be used highly parallel on a cluster. ... MongoDB MapReduce is single threaded on a single server...</q></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=MongoDB%3A+Terrible+MapReduce+Performance&amp;rft.date=October+16%2C+2010&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F3947889%2Fmongodb-terrible-mapreduce-performance&amp;rft.pub=Stack+Overflow&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-ullman-9"><span class="mw-cite-backlink">^ <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ullman_9-0"><span class="cite-accessibility-label">Jump up to: </span><sup><i><b>a</b></i></sup></a> <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ullman_9-1"><sup><i><b>b</b></i></sup></a> <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ullman_9-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation journal"><a href="https://en.wikipedia.org/wiki/Jeffrey_Ullman" title="Jeffrey Ullman">Ullman, J. D.</a> (2012). <a rel="nofollow" class="external text" href="http://xrds.acm.org/article.cfm?aid=2331053">"Designing good MapReduce algorithms"</a>. <i>XRDS: Crossroads, the ACM Magazine for Students</i> (<a href="https://en.wikipedia.org/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">Association for Computing Machinery</a>) <b>19</b>: 30. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F2331042.2331053">10.1145/2331042.2331053</a>. <span style="font-size:0.95em; font-size:90%; color:#555">(subscription required (<span title="Sources are not required to be available online. Online sources do not have to be freely available. The site may require a paid subscription." style="border-bottom:1px dotted;cursor:help">help</span>))</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Designing+good+MapReduce+algorithms&amp;rft.aufirst=J.+D.&amp;rft.aulast=Ullman&amp;rft.au=Ullman%2C+J.+D.&amp;rft.date=2012&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fxrds.acm.org%2Farticle.cfm%3Faid%3D2331053&amp;rft_id=info%3Adoi%2F10.1145%2F2331042.2331053&amp;rft.jtitle=XRDS%3A+Crossroads%2C+the+ACM+Magazine+for+Students&amp;rft.pages=30&amp;rft.pub=Association+for+Computing+Machinery&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=19" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F2331042.2331053&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-10"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web">Czajkowski, Grzegorz,; Marián Dvorský; Jerry Zhao; Michael Conley. <a rel="nofollow" class="external text" href="http://googleresearch.blogspot.com/2011/09/sorting-petabytes-with-mapreduce-next.html">"Sorting Petabytes with MapReduce - The Next Episode"</a>. Google<span class="reference-accessdate">. Retrieved <span class="nowrap">7 April</span> 2014</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Czajkowski%2C+Grzegorz%2C&amp;rft.aufirst=Grzegorz%2C&amp;rft.au=Jerry+Zhao&amp;rft.aulast=Czajkowski&amp;rft.au=Mari%C3%A1n+Dvorsk%C3%BD&amp;rft.au=Michael+Conley&amp;rft.btitle=Sorting+Petabytes+with+MapReduce+-+The+Next+Episode&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fgoogleresearch.blogspot.com%2F2011%2F09%2Fsorting-petabytes-with-mapreduce-next.html&amp;rft.pub=Google&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-11"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://research.google.com/archive/mapreduce-osdi04-slides/index-auto-0004.html">Example: Count word occurrences</a>. Research.google.com. Retrieved on 2013-09-18.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-12"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation journal">Bosagh Zadeh, Reza; Carlsson, Gunnar. <a rel="nofollow" class="external text" href="http://stanford.edu/~rezab/papers/dimsum.pdf">"Dimension Independent Matrix Square Using MapReduce"</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">12 July</span> 2014</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Bosagh+Zadeh%2C+Reza&amp;rft.au=Carlsson%2C+Gunnar&amp;rft.aufirst=Reza&amp;rft.aulast=Bosagh+Zadeh&amp;rft.btitle=Dimension+Independent+Matrix+Square+Using+MapReduce&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fstanford.edu%2F~rezab%2Fpapers%2Fdimsum.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-mrml-13"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-mrml_13-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a href="https://en.wikipedia.org/w/index.php?title=Cheng-Tao_Chu&action=edit&redlink=1" class="new" title="Cheng-Tao Chu (page does not exist)">Cheng-Tao Chu</a>; Sang Kyun Kim, Yi-An Lin, YuanYuan Yu, Gary Bradski, Andrew Ng, and <a href="https://en.wikipedia.org/wiki/Kunle_Olukotun" title="Kunle Olukotun">Kunle Olukotun</a>. <a rel="nofollow" class="external text" href="http://www.willowgarage.com/map-reduce-machine-learning-multicore">"Map-Reduce for Machine Learning on Multicore"</a>. NIPS 2006.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Cheng-Tao+Chu&amp;rft.aulast=Cheng-Tao+Chu&amp;rft.btitle=Map-Reduce+for+Machine+Learning+on+Multicore&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.willowgarage.com%2Fmap-reduce-machine-learning-multicore&amp;rft.pub=NIPS+2006&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span style="display:none;font-size:100%" class="error citation-comment">Cite uses deprecated parameter <code style="color:inherit; border:inherit; padding:inherit;">|coauthors=</code> (<a href="https://en.wikipedia.org/wiki/Help:CS1_errors#deprecated_params" title="Help:CS1 errors">help</a>)</span></span></li>
+<li id="cite_note-evalMR-14"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-evalMR_14-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Ranger, C.; Raghuraman, R.; Penmetsa, A.; Bradski, G.; Kozyrakis, C. (2007). "Evaluating MapReduce for Multi-core and Multiprocessor Systems". <i>2007 IEEE 13th International Symposium on High Performance Computer Architecture</i>. p.&nbsp;13. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1109%2FHPCA.2007.346181">10.1109/HPCA.2007.346181</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/1-4244-0804-0" title="Special:BookSources/1-4244-0804-0">1-4244-0804-0</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Evaluating+MapReduce+for+Multi-core+and+Multiprocessor+Systems&amp;rft.au=Bradski%2C+G.&amp;rft.aufirst=C.&amp;rft.au=Kozyrakis%2C+C.&amp;rft.aulast=Ranger&amp;rft.au=Penmetsa%2C+A.&amp;rft.au=Raghuraman%2C+R.&amp;rft.au=Ranger%2C+C.&amp;rft.btitle=2007+IEEE+13th+International+Symposium+on+High+Performance+Computer+Architecture&amp;rft.date=2007&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1109%2FHPCA.2007.346181&amp;rft.isbn=1-4244-0804-0&amp;rft.pages=13&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1109.2FHPCA.2007.346181&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-graphicsMR-15"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-graphicsMR_15-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">He, B.; Fang, W.; Luo, Q.; Govindaraju, N. K.; Wang, T. (2008). "Mars: a MapReduce framework on graphics processors". <a rel="nofollow" class="external text" href="http://wenbin.org/doc/papers/Wenbin08PACT.pdf"><i>Proceedings of the 17th international conference on Parallel architectures and compilation techniques - PACT '08</i></a> <span style="font-size:85%;">(PDF)</span>. p.&nbsp;260. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F1454115.1454152">10.1145/1454115.1454152</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/9781605582825" title="Special:BookSources/9781605582825">9781605582825</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Mars%3A+a+MapReduce+framework+on+graphics+processors&amp;rft.au=Fang%2C+W.&amp;rft.aufirst=B.&amp;rft.au=Govindaraju%2C+N.+K.&amp;rft.au=He%2C+B.&amp;rft.aulast=He&amp;rft.au=Luo%2C+Q.&amp;rft.au=Wang%2C+T.&amp;rft.btitle=Proceedings+of+the+17th+international+conference+on+Parallel+architectures+and+compilation+techniques+-+PACT+%2708&amp;rft.date=2008&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwenbin.org%2Fdoc%2Fpapers%2FWenbin08PACT.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F1454115.1454152&amp;rft.isbn=9781605582825&amp;rft.pages=260&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F1454115.1454152&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-tiledMR-16"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-tiledMR_16-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Chen, R.; Chen, H.; Zang, B. (2010). "Tiled-MapReduce: optimizing resource usages of data-parallel applications on multicore with tiling". <i>Proceedings of the 19th international conference on Parallel architectures and compilation techniques - PACT '10</i>. p.&nbsp;523. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F1854273.1854337">10.1145/1854273.1854337</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/9781450301787" title="Special:BookSources/9781450301787">9781450301787</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Tiled-MapReduce%3A+optimizing+resource+usages+of+data-parallel+applications+on+multicore+with+tiling&amp;rft.au=Chen%2C+H.&amp;rft.au=Chen%2C+R.&amp;rft.aufirst=R.&amp;rft.aulast=Chen&amp;rft.au=Zang%2C+B.&amp;rft.btitle=Proceedings+of+the+19th+international+conference+on+Parallel+architectures+and+compilation+techniques+-+PACT+%2710&amp;rft.date=2010&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1145%2F1854273.1854337&amp;rft.isbn=9781450301787&amp;rft.pages=523&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F1854273.1854337&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-gridMR-17"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-gridMR_17-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Tang, B.; Moca, M.; Chevalier, S.; He, H.; Fedak, G. (2010). "Towards MapReduce for Desktop Grid Computing". <a rel="nofollow" class="external text" href="http://graal.ens-lyon.fr/~gfedak/papers/xtremmapreduce.3pgcic10.pdf"><i>2010 International Conference on P2P, Parallel, Grid, Cloud and Internet Computing</i></a> <span style="font-size:85%;">(PDF)</span>. p.&nbsp;193. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1109%2F3PGCIC.2010.33">10.1109/3PGCIC.2010.33</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/978-1-4244-8538-3" title="Special:BookSources/978-1-4244-8538-3">978-1-4244-8538-3</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Towards+MapReduce+for+Desktop+Grid+Computing&amp;rft.au=Chevalier%2C+S.&amp;rft.au=Fedak%2C+G.&amp;rft.aufirst=B.&amp;rft.au=He%2C+H.&amp;rft.aulast=Tang&amp;rft.au=Moca%2C+M.&amp;rft.au=Tang%2C+B.&amp;rft.btitle=2010+International+Conference+on+P2P%2C+Parallel%2C+Grid%2C+Cloud+and+Internet+Computing&amp;rft.date=2010&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fgraal.ens-lyon.fr%2F~gfedak%2Fpapers%2Fxtremmapreduce.3pgcic10.pdf&amp;rft_id=info%3Adoi%2F10.1109%2F3PGCIC.2010.33&amp;rft.isbn=978-1-4244-8538-3&amp;rft.pages=193&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1109.2F3PGCIC.2010.33&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-volunteerMR-18"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-volunteerMR_18-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Lin, H.; Ma, X.; Archuleta, J.; Feng, W. C.; Gardner, M.; Zhang, Z. (2010). "MOON: MapReduce On Opportunistic eNvironments". <a rel="nofollow" class="external text" href="http://eprints.cs.vt.edu/archive/00001089/01/moon.pdf"><i>Proceedings of the 19th ACM International Symposium on High Performance Distributed Computing - HPDC '10</i></a> <span style="font-size:85%;">(PDF)</span>. p.&nbsp;95. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F1851476.1851489">10.1145/1851476.1851489</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/9781605589428" title="Special:BookSources/9781605589428">9781605589428</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=MOON%3A+MapReduce+On+Opportunistic+eNvironments&amp;rft.au=Archuleta%2C+J.&amp;rft.au=Feng%2C+W.+C.&amp;rft.aufirst=H.&amp;rft.au=Gardner%2C+M.&amp;rft.aulast=Lin&amp;rft.au=Lin%2C+H.&amp;rft.au=Ma%2C+X.&amp;rft.au=Zhang%2C+Z.&amp;rft.btitle=Proceedings+of+the+19th+ACM+International+Symposium+on+High+Performance+Distributed+Computing+-+HPDC+%2710&amp;rft.date=2010&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Feprints.cs.vt.edu%2Farchive%2F00001089%2F01%2Fmoon.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F1851476.1851489&amp;rft.isbn=9781605589428&amp;rft.pages=95&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F1851476.1851489&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-dynCloudMR-19"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-dynCloudMR_19-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation journal">Marozzo, F.; Talia, D.; Trunfio, P. (2012). <a rel="nofollow" class="external text" href="http://grid.deis.unical.it/papers/pdf/MarozzoTaliaTrunfioJCSS2012.pdf">"P2P-MapReduce: Parallel data processing in dynamic Cloud environments"</a> <span style="font-size:85%;">(PDF)</span>. <i><a href="https://en.wikipedia.org/wiki/Journal_of_Computer_and_System_Sciences" title="Journal of Computer and System Sciences">Journal of Computer and System Sciences</a></i> <b>78</b> (5): 1382. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1016%2Fj.jcss.2011.12.021">10.1016/j.jcss.2011.12.021</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=P2P-MapReduce%3A+Parallel+data+processing+in+dynamic+Cloud+environments&amp;rft.aufirst=F.&amp;rft.aulast=Marozzo&amp;rft.au=Marozzo%2C+F.&amp;rft.au=Talia%2C+D.&amp;rft.au=Trunfio%2C+P.&amp;rft.date=2012&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fgrid.deis.unical.it%2Fpapers%2Fpdf%2FMarozzoTaliaTrunfioJCSS2012.pdf&amp;rft_id=info%3Adoi%2F10.1016%2Fj.jcss.2011.12.021&amp;rft.issue=5&amp;rft.jtitle=Journal+of+Computer+and+System+Sciences&amp;rft.pages=1382&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=78" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1016.2Fj.jcss.2011.12.021&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-mobileMR-20"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-mobileMR_20-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation book">Dou, A.; Kalogeraki, V.; Gunopulos, D.; Mielikainen, T.; Tuulos, V. H. (2010). "Misco: a MapReduce framework for mobile systems". <i>Proceedings of the 3rd International Conference on PErvasive Technologies Related to Assistive Environments - PETRA '10</i>. p.&nbsp;1. <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1145%2F1839294.1839332">10.1145/1839294.1839332</a>. <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Special:BookSources/9781450300711" title="Special:BookSources/9781450300711">9781450300711</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.atitle=Misco%3A+a+MapReduce+framework+for+mobile+systems&amp;rft.au=Dou%2C+A.&amp;rft.aufirst=A.&amp;rft.au=Gunopulos%2C+D.&amp;rft.au=Kalogeraki%2C+V.&amp;rft.aulast=Dou&amp;rft.au=Mielikainen%2C+T.&amp;rft.au=Tuulos%2C+V.+H.&amp;rft.btitle=Proceedings+of+the+3rd+International+Conference+on+PErvasive+Technologies+Related+to+Assistive+Environments+-+PETRA+%2710&amp;rft.date=2010&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1145%2F1839294.1839332&amp;rft.isbn=9781450300711&amp;rft.pages=1&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F1839294.1839332&action=edit&editintro=Template:Cite_doi/editintro2">edit</a></span></span></li>
+<li id="cite_note-usage-21"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-usage_21-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.baselinemag.com/c/a/Infrastructure/How-Google-Works-1/5">"How Google Works"</a>. baselinemag.com. <q>As of October, Google was running about 3,000 computing jobs per day through MapReduce, representing thousands of machine-days, according to a presentation by Dean. Among other things, these batch routines analyze the latest Web pages and update Google's indexes.</q></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=How+Google+Works&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.baselinemag.com%2Fc%2Fa%2FInfrastructure%2FHow-Google-Works-1%2F5&amp;rft.pub=baselinemag.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-shark-22"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-shark_22-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://typicalprogrammer.com/?p=16">"Database Experts Jump the MapReduce Shark"</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=Database+Experts+Jump+the+MapReduce+Shark&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Ftypicalprogrammer.com%2F%3Fp%3D16&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-ddandms1-23"><span class="mw-cite-backlink">^ <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ddandms1_23-0"><span class="cite-accessibility-label">Jump up to: </span><sup><i><b>a</b></i></sup></a> <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ddandms1_23-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a href="https://en.wikipedia.org/wiki/David_DeWitt" title="David DeWitt">David DeWitt</a>; <a href="https://en.wikipedia.org/wiki/Michael_Stonebraker" title="Michael Stonebraker">Michael Stonebraker</a>. <a rel="nofollow" class="external text" href="http://craig-henderson.blogspot.com/2009/11/dewitt-and-stonebrakers-mapreduce-major.html">"MapReduce: A major step backwards"</a>. craig-henderson.blogspot.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-08-27</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=David+DeWitt&amp;rft.aulast=David+DeWitt&amp;rft.au=Michael+Stonebraker&amp;rft.btitle=MapReduce%3A+A+major+step+backwards&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fcraig-henderson.blogspot.com%2F2009%2F11%2Fdewitt-and-stonebrakers-mapreduce-major.html&amp;rft.pub=craig-henderson.blogspot.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-ApacheHiveWiki-24"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-ApacheHiveWiki_24-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://cwiki.apache.org/confluence/display/Hive/Home">"Apache Hive - Index of - Apache Software Foundation"</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=Apache+Hive+-+Index+of+-+Apache+Software+Foundation&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fcwiki.apache.org%2Fconfluence%2Fdisplay%2FHive%2FHome&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-YSmartPaper-25"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-YSmartPaper_25-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web">Rubao Lee, Tian Luo, Yin Huai, Fusheng Wang, Yongqiang He and Xiaodong Zhang. <a rel="nofollow" class="external text" href="http://www.cse.ohio-state.edu/hpcs/WWW/HTML/publications/papers/TR-11-7.pdf">"YSmart: Yet Another SQL-to-MapReduce Translator"</a> <span style="font-size:85%;">(PDF)</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.aulast=Rubao+Lee%2C+Tian+Luo%2C+Yin+Huai%2C+Fusheng+Wang%2C+Yongqiang+He+and+Xiaodong+Zhang&amp;rft.au=Rubao+Lee%2C+Tian+Luo%2C+Yin+Huai%2C+Fusheng+Wang%2C+Yongqiang+He+and+Xiaodong+Zhang&amp;rft.btitle=YSmart%3A+Yet+Another+SQL-to-MapReduce+Translator&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.cse.ohio-state.edu%2Fhpcs%2FWWW%2FHTML%2Fpublications%2Fpapers%2FTR-11-7.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-HBase-26"><span class="mw-cite-backlink">^ <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-HBase_26-0"><span class="cite-accessibility-label">Jump up to: </span><sup><i><b>a</b></i></sup></a> <a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-HBase_26-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://hbase.apache.org/">"HBase - HBase Home - Apache Software Foundation"</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=HBase+-+HBase+Home+-+Apache+Software+Foundation&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fhbase.apache.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-BigTablePaper-27"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-BigTablePaper_27-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://research.google.com/archive/bigtable-osdi06.pdf">"Bigtable: A Distributed Storage System for Structured Data"</a> <span style="font-size:85%;">(PDF)</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=Bigtable%3A+A+Distributed+Storage+System+for+Structured+Data&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fresearch.google.com%2Farchive%2Fbigtable-osdi06.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-gj1-28"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-gj1_28-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a href="https://en.wikipedia.org/w/index.php?title=Greg_Jorgensen&action=edit&redlink=1" class="new" title="Greg Jorgensen (page does not exist)">Greg Jorgensen</a>. <a rel="nofollow" class="external text" href="http://typicalprogrammer.com/?p=16">"Relational Database Experts Jump The MapReduce Shark"</a>. typicalprogrammer.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-11-11</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Greg+Jorgensen&amp;rft.aulast=Greg+Jorgensen&amp;rft.btitle=Relational+Database+Experts+Jump+The+MapReduce+Shark&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Ftypicalprogrammer.com%2F%3Fp%3D16&amp;rft.pub=typicalprogrammer.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-sigmod-29"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-sigmod_29-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web">Andrew Pavlo; E. Paulson, A. Rasin, D. J. Abadi, <a href="https://en.wikipedia.org/wiki/David_DeWitt" title="David DeWitt">D. J. Dewitt</a>, S. Madden, and <a href="https://en.wikipedia.org/wiki/Michael_Stonebraker" title="Michael Stonebraker">M. Stonebraker</a>. <a rel="nofollow" class="external text" href="http://database.cs.brown.edu/projects/mapreduce-vs-dbms/">"A Comparison of Approaches to Large-Scale Data Analysis"</a>. Brown University<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-01-11</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Andrew+Pavlo&amp;rft.aulast=Andrew+Pavlo&amp;rft.btitle=A+Comparison+of+Approaches+to+Large-Scale+Data+Analysis&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fdatabase.cs.brown.edu%2Fprojects%2Fmapreduce-vs-dbms%2F&amp;rft.pub=Brown+University&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span> <span style="display:none;font-size:100%" class="error citation-comment">Cite uses deprecated parameter <code style="color:inherit; border:inherit; padding:inherit;">|coauthors=</code> (<a href="https://en.wikipedia.org/wiki/Help:CS1_errors#deprecated_params" title="Help:CS1 errors">help</a>)</span></span></li>
+<li id="cite_note-patent-30"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-patent_30-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=/netahtml/PTO/srchnum.htm&r=1&f=G&l=50&s1=7,650,331.PN.&OS=PN/7,650,331&RS=PN/7,650,331">US Patent 7,650,331: "System and method for efficient large-scale data processing "</a></span></li>
+<li id="cite_note-Curt_Monash-31"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-Curt_Monash_31-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a href="https://en.wikipedia.org/w/index.php?title=Curt_Monash&action=edit&redlink=1" class="new" title="Curt Monash (page does not exist)">Curt Monash</a>. <a rel="nofollow" class="external text" href="http://www.dbms2.com/2010/02/11/google-mapreduce-patent/">"More patent nonsense — Google MapReduce"</a>. dbms2.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-03-07</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Curt+Monash&amp;rft.aulast=Curt+Monash&amp;rft.btitle=More+patent+nonsense+%E2%80%94+Google+MapReduce&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.dbms2.com%2F2010%2F02%2F11%2Fgoogle-mapreduce-patent%2F&amp;rft.pub=dbms2.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-Clusterpoint-32"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-Clusterpoint_32-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.clusterpoint.com/">"Clusterpoint XML database"</a>. clusterpoint.com.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=Clusterpoint+XML+database&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.clusterpoint.com&amp;rft.pub=clusterpoint.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-MongoDB-33"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-MongoDB_33-0"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mongodb.org/">"MongoDB NoSQL database"</a>. 10gen.com.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.btitle=MongoDB+NoSQL+database&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.mongodb.org&amp;rft.pub=10gen.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="https://en.wikipedia.org/wiki/MapReduce#cite_ref-34"><span class="cite-accessibility-label">Jump up </span>^</a></b></span> <span class="reference-text"><span class="citation conference">Zaharia, Matei; Chowdhury, Mosharaf; Franklin, Michael; Shenker, Scott; Stoica, Ion (June 2010). <i><a href="https://en.wikipedia.org/wiki/Spark_(cluster_computing_framework)" title="Spark (cluster computing framework)" class="mw-redirect">Spark: Cluster Computing with Working Sets</a></i>. HotCloud 2010.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMapReduce&amp;rft.au=Chowdhury%2C+Mosharaf&amp;rft.aufirst=Matei&amp;rft.au=Franklin%2C+Michael&amp;rft.aulast=Zaharia&amp;rft.au=Shenker%2C+Scott&amp;rft.au=Stoica%2C+Ion&amp;rft.au=Zaharia%2C+Matei&amp;rft.btitle=Spark%3A+Cluster+Computing+with+Working+Sets&amp;rft.date=June+2010&amp;rft.genre=book&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&nbsp;</span></span></span></li>
+</ol>
+</div>
+<p>General references:</p>
+<div class="refbegin" style="">
+<ul>
+<li>Dean, Jeffrey &amp; Ghemawat, Sanjay (2004). <a rel="nofollow" class="external text" href="http://research.google.com/archive/mapreduce.html">"MapReduce: Simplified Data Processing on Large Clusters"</a>. Retrieved November 23, 2011.</li>
+<li>Matt Williams (2009). <a rel="nofollow" class="external text" href="http://wordflows.com/matt/2009/01/18/understanding-mapreduce/">"Understanding Map-Reduce"</a>. Retrieved April 13, 2011.</li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit&section=22" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tbody><tr>
+<td class="mbox-image"><img alt="" src="./mapreduce_files/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376"></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="https://commons.wikimedia.org/wiki/Category:MapReduce" class="extiw" title="commons:Category:MapReduce">MapReduce</a></b></i>.</td>
+</tr>
+</tbody></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://mapreduce.sandia.gov/index.html">MapReduce-MPI</a> MapReduce-MPI Library</li>
+</ul>
+<dl>
+<dt>Papers</dt>
+</dl>
+<div class="refbegin" style="">
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.researchgate.net/publication/259226804_A_MapReduce_based_distributed_SVM_algorithm_for_binary_classification">"CloudSVM: Training an SVM Classifier in Cloud Computing Systems"</a>-paper by F. Ozgur Catak, M. Erdal Balaban, Springer, Lecture Notes in Computer Science,Pervasive Computing and Networked World 2012 from <a href="https://en.wikipedia.org/wiki/T%C3%9CB%C4%B0TAK" title="TÜBİTAK" class="mw-redirect">TÜBİTAK</a> and <a href="https://en.wikipedia.org/wiki/Istanbul_University" title="Istanbul University">Istanbul University</a></li>
+<li><a rel="nofollow" class="external text" href="http://dl.acm.org/citation.cfm?id=1996023.1996026">"A Hierarchical Framework for Cross-Domain MapReduce Execution"</a> — paper by Yuan Luo, Zhenhua Guo, Yiming Sun, Beth Plale, Judy Qiu; from <a href="https://en.wikipedia.org/wiki/Indiana_University" title="Indiana University">Indiana University</a> and Wilfred Li; from <a href="https://en.wikipedia.org/wiki/University_of_California,_San_Diego" title="University of California, San Diego">University of California, San Diego</a></li>
+<li><a rel="nofollow" class="external text" href="http://research.google.com/archive/sawzall.html">"Interpreting the Data: Parallel Analysis with Sawzall"</a> — paper by Rob Pike, Sean Dorward, Robert Griesemer, Sean Quinlan; from <a href="https://en.wikipedia.org/wiki/Google_Labs" title="Google Labs">Google Labs</a></li>
+<li><a rel="nofollow" class="external text" href="http://csl.stanford.edu/~christos/publications/2007.cmp_mapreduce.hpca.pdf">"Evaluating MapReduce for Multi-core and Multiprocessor Systems"</a> — paper by Colby Ranger, Ramanan Raghuraman, Arun Penmetsa, Gary Bradski, and Christos Kozyrakis; from <a href="https://en.wikipedia.org/wiki/Stanford_University" title="Stanford University">Stanford University</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dbms2.com/2008/08/26/why-mapreduce-matters-to-sql-data-warehousing/">"Why MapReduce Matters to SQL Data Warehousing"</a> — analysis related to the August, 2008 introduction of MapReduce/SQL integration by <a href="https://en.wikipedia.org/wiki/Aster_Data_Systems" title="Aster Data Systems">Aster Data Systems</a> and <a href="https://en.wikipedia.org/wiki/Greenplum" title="Greenplum">Greenplum</a></li>
+<li><a rel="nofollow" class="external text" href="http://pages.cs.wisc.edu/~dekruijf/docs/mapreduce-cell.pdf">"MapReduce for the Cell B.E. Architecture"</a> — paper by Marc de Kruijf and Karthikeyan Sankaralingam; from <a href="https://en.wikipedia.org/wiki/University_of_Wisconsin%E2%80%93Madison" title="University of Wisconsin–Madison">University of Wisconsin–Madison</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cse.ust.hk/catalac/users/saven/GPGPU/MapReduce/PACT08/171.pdf">"Mars: A MapReduce Framework on Graphics Processors"</a> — paper by Bingsheng He, Wenbin Fang, Qiong Luo, Naga K. Govindaraju, Tuyong Wang; from <a href="https://en.wikipedia.org/wiki/Hong_Kong_University_of_Science_and_Technology" title="Hong Kong University of Science and Technology">Hong Kong University of Science and Technology</a>; published in Proc. PACT 2008. It presents the design and implementation of MapReduce on graphics processors.</li>
+<li><a rel="nofollow" class="external text" href="http://www.springerlink.com/content/h17r882710314147/">"A Peer-to-Peer Framework for Supporting MapReduce Applications in Dynamic Cloud Environments"</a> — paper by Fabrizio Marozzo, Domenico Talia, Paolo Trunfio; from <a href="https://en.wikipedia.org/wiki/University_of_Calabria" title="University of Calabria">University of Calabria</a>; published in Cloud Computing: Principles, Systems and Applications, N. Antonopoulos, L. Gillam (Editors), chapt. 7, pp.&nbsp;113–125, Springer, 2010, <a href="https://en.wikipedia.org/wiki/Special:BookSources/9781849962407" class="internal mw-magiclink-isbn">ISBN 978-1-84996-240-7</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?doid=1247480.1247602">"Map-Reduce-Merge: Simplified Relational Data Processing on Large Clusters"</a> — paper by Hung-Chih Yang, Ali Dasdan, Ruey-Lung Hsiao, and D. Stott Parker; from <a href="https://en.wikipedia.org/wiki/Yahoo" title="Yahoo" class="mw-redirect">Yahoo</a> and <a href="https://en.wikipedia.org/wiki/UCLA" title="UCLA" class="mw-redirect">UCLA</a>; published in Proc. of ACM SIGMOD, pp.&nbsp;1029–1040, 2007. (This paper shows how to extend MapReduce for relational data processing.)</li>
+<li>FLuX: the <a rel="nofollow" class="external text" href="http://citeseer.ist.psu.edu/647742.html">Fault-tolerant</a>, <a rel="nofollow" class="external text" href="http://citeseer.ist.psu.edu/546646.html">Load Balancing</a> eXchange operator from <a href="https://en.wikipedia.org/wiki/UC_Berkeley" title="UC Berkeley" class="mw-redirect">UC Berkeley</a> provides an integration of partitioned parallelism with process pairs. This results in a more pipelined approach than Google's MapReduce with instantaneous failover, but with additional implementation cost.</li>
+<li><a rel="nofollow" class="external text" href="http://infolab.stanford.edu/~ullman/pub/mapred.pdf">"A New Computation Model for Rack-Based Computing"</a> — paper by Foto N. Afrati; Jeffrey D. Ullman; from <a href="https://en.wikipedia.org/wiki/Stanford_University" title="Stanford University">Stanford University</a>; Not published as of November 2009. This paper is an attempt to develop a general model in which one can compare algorithms for computing in an environment similar to what map-reduce expects.</li>
+<li><a rel="nofollow" class="external text" href="http://portal.acm.org/beta/citation.cfm?id=1723112.1723129">FPMR: MapReduce framework on FPGA</a>—paper by Yi Shan, Bo Wang, Jing Yan, Yu Wang, Ningyi Xu, Huazhong Yang (2010), in FPGA '10, Proceedings of the 18th annual ACM/SIGDA international symposium on Field programmable gate arrays.</li>
+<li><a rel="nofollow" class="external text" href="http://ipads.se.sjtu.edu.cn/lib/exe/fetch.php?media=publications:ostrich-pact10.pdf">"Tiled-MapReduce: Optimizing Resource Usages of Data-parallel Applications on Multicore with Tiling"</a>—paper by Rong Chen, Haibo Chen and Binyu Zang from <a href="https://en.wikipedia.org/wiki/Fudan_University" title="Fudan University">Fudan University</a>; published in Proc. PACT 2010. It presents the Tiled-MapReduce programming model which optimizes resource usages of MapReduce applications on multicore environment using tiling strategy.</li>
+<li><a rel="nofollow" class="external text" href="http://ipads.se.sjtu.edu.cn/lib/exe/fetch.php?media=publications:ostrich-taco13.pdf">"Tiled MapReduce: Efficient and Flexible MapReduce Processing on Multicore with Tiling"</a>—paper by Rong Chen, and Haibo Chen from <a href="https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University" title="Shanghai Jiao Tong University">Shanghai Jiao Tong University</a>; published in ACM TACO, 10(1), 2013. It extends the earlier version of Ostrich to support several usage scenarios such as online and incremental computing on multicore machines.</li>
+<li><a rel="nofollow" class="external text" href="http://dx.doi.org/10.1016/j.jpdc.2010.12.004">"Scheduling divisible MapReduce computations "</a>—paper by Joanna Berlińska from <a href="https://en.wikipedia.org/wiki/Adam_Mickiewicz_University" title="Adam Mickiewicz University" class="mw-redirect">Adam Mickiewicz University</a> and Maciej Drozdowski from <a href="https://en.wikipedia.org/wiki/Poznan_University_of_Technology" title="Poznan University of Technology" class="mw-redirect">Poznan University of Technology</a>; Journal of Parallel and Distributed Computing 71 (2011) 450-459, <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="https://dx.doi.org/10.1016%2Fj.jpdc.2010.12.004">10.1016/j.jpdc.2010.12.004</a>. It presents scheduling and performance model of MapReduce.</li>
+<li><a rel="nofollow" class="external text" href="http://stratosphere.eu/files/NephelePACTs_10.pdf">"Nephele/PACTs: A Programming Model and Execution Framework for Web-Scale Analytical Processing"</a>—paper by D. Battré, S. Ewen, F. Hueske, O. Kao, V. Markl, and D. Warneke from <a rel="nofollow" class="external text" href="http://www.tu-berlin.de/menue/home/parameter/en/">TU Berlin</a> published in Proc. of ACM SoCC 2010. The paper introduces the PACT programming model, a generalization of MapReduce, developed in the <a rel="nofollow" class="external text" href="http://www.stratosphere.eu/">Stratosphere</a> research project.</li>
+<li><a rel="nofollow" class="external text" href="http://stratosphere.eu/files/ComparingMapReduceAndPACTs_11.pdf">"MapReduce and PACT - Comparing Data Parallel Programming Models"</a>—paper by A. Alexandrov, S. Ewen, M. Heimel, F. Hueske, O. Kao, V. Markl, E. Nijkamp, and D. Warneke from <a rel="nofollow" class="external text" href="http://www.tu-berlin.de/menue/home/parameter/en/">TU Berlin</a> published in Proc. of BTW 2011.</li>
+</ul>
+</div>
+<dl>
+<dt>Books</dt>
+</dl>
+<div class="refbegin" style="">
+<ul>
+<li>Jimmy Lin and Chris Dyer. <a rel="nofollow" class="external text" href="http://www.umiacs.umd.edu/~jimmylin/book.html">"Data-Intensive Text Processing with MapReduce"</a> (manuscript)</li>
+</ul>
+</div>
+<dl>
+<dt>Educational courses</dt>
+</dl>
+<div class="refbegin" style="">
+<ul>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/edu/submissions/mapreduce-minilecture/listing.html">Cluster Computing and MapReduce</a> course from <a rel="nofollow" class="external text" href="http://code.google.com/edu/">Google Code University</a> contains video lectures and related course materials from a series of lectures that was taught to Google software engineering interns during the Summer of 2007.</li>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/edu/submissions/mapreduce/listing.html">MapReduce in a Week</a> course from <a rel="nofollow" class="external text" href="http://code.google.com/edu/">Google Code University</a> contains a comprehensive introduction to MapReduce including lectures, reading material, and programming assignments.</li>
+<li><a rel="nofollow" class="external text" href="http://mr.iap.2008.googlepages.com/">MapReduce course</a>, taught by engineers of <a href="https://en.wikipedia.org/wiki/Google" title="Google">Google</a> Boston, part of 2008 Independent Activities Period at <a href="https://en.wikipedia.org/wiki/MIT" title="MIT" class="mw-redirect">MIT</a>.</li>
+</ul>
+</div>
+<dl>
+<dt>Bibliography</dt>
+</dl>
+<div class="refbegin" style="">
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.columbia.edu/~ak2834/mapreduce.html">MapReduce bibliography by A. Kamil, 2010</a></li>
+</ul>
+</div>
+<table class="navbox" style="border-spacing:0">
+<tbody><tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit" id="collapsibleTable0">
+<tbody><tr>
+<th scope="col" class="navbox-title" colspan="2"><span class="collapseButton">[<a id="collapseButton0" href="https://en.wikipedia.org/wiki/MapReduce#">hide</a>]</span>
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Google_Inc." title="Template:Google Inc."><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Google_Inc." title="Template talk:Google Inc."><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Google_Inc.&action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:110%"><a href="https://en.wikipedia.org/wiki/Google" title="Google">Google</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Outline_of_Google" title="Outline of Google">Overview</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/History_of_Google" title="History of Google">History</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Google" title="List of mergers and acquisitions by Google">List of mergers and acquisitions</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_products" title="List of Google products">Products</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Criticism_of_Google" title="Criticism of Google">Criticism</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Censorship_by_Google" title="Censorship by Google">Censorship</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_domains" title="List of Google domains">Domains</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_hoaxes_and_easter_eggs" title="List of Google hoaxes and easter eggs">Hoaxes</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Don%27t_be_evil" title="Don&#39;t be evil">Don't be evil</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Advertising</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AdMob" title="AdMob">AdMob</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adscape" title="Adscape">Adscape</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AdSense" title="AdSense">AdSense</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AdWords" title="AdWords">AdWords</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Analytics" title="Google Analytics">Analytics</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Certification_Program" title="Google Certification Program">Certification Program</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DoubleClick" title="DoubleClick">DoubleClick</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DoubleClick_for_Publishers" title="DoubleClick for Publishers">DoubleClick for Publishers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Wallet" title="Google Wallet">Wallet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Communication</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Alerts" title="Google Alerts">Alerts</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Apps_Script" title="Google Apps Script">Apps Script</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Calendar" title="Google Calendar">Calendar</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Contacts" title="Google Contacts">Contacts</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Friend_Connect" title="Google Friend Connect">Friend Connect</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gmail" title="Gmail">Gmail</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/History_of_Gmail" title="History of Gmail">history</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gmail_interface" title="Gmail interface">interface</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google%2B" title="Google+">Google+</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Groups" title="Google Groups">Groups</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Hangouts" title="Google Hangouts">Hangouts</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Inbox" title="Google Inbox">Inbox</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Sync" title="Google Sync">Sync</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Text-to-Speech" title="Google Text-to-Speech">Text-to-Speech</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Translate" title="Google Translate">Translate</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_transliteration" title="Google transliteration">Transliteration</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Voice" title="Google Voice">Voice</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Software</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome" title="Google Chrome">Chrome</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_for_Android" title="Google Chrome for Android">for Android</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_for_iOS" title="Google Chrome for iOS" class="mw-redirect">for iOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chrome_Web_Store" title="Chrome Web Store">Chrome Web Store</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_Apps" title="Google Chrome Apps">Apps</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_extension" title="Google Chrome extension">Extensions</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Cloud_Print" title="Google Cloud Print">Cloud Print</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Earth" title="Google Earth">Earth</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Sky" title="Google Sky">Sky</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Moon" title="Google Moon">Moon</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Mars" title="Google Mars">Mars</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Gadgets" title="Google Gadgets">Gadgets</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Goggles" title="Google Goggles">Goggles</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_IME" title="Google IME">IME</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Pinyin" title="Google Pinyin">Pinyin</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Japanese_Input" title="Google Japanese Input">Japanese</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Keep" title="Google Keep">Keep</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_News_%26_Weather" title="Google News &amp; Weather">News &amp; Weather</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Now" title="Google Now">Now</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Picasa" title="Picasa">Picasa</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenRefine" title="OpenRefine">OpenRefine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Toolbar" title="Google Toolbar">Toolbar</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Google_platform" title="Google platform">Platforms</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Account" title="Google Account">Account</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Android_version_history" title="Android version history">version history</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_software_development" title="Android software development">software development</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_Auto" title="Android Auto">Android Auto</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_TV" title="Android TV">Android TV</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Android_Wear" title="Android Wear">Android Wear</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_App_Engine" title="Google App Engine">App Engine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Apps_for_Work" title="Google Apps for Work">Apps for Work</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Classroom" title="Google Classroom">Classroom</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Authenticator" title="Google Authenticator">Authenticator</a></li>
+<li><a href="https://en.wikipedia.org/wiki/BigTable" title="BigTable">BigTable</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zygote_Body" title="Zygote Body" class="mw-redirect">Body</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Books" title="Google Books">Books</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Books_Library_Project" title="Google Books Library Project">Library Project</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Caja_project" title="Caja project">Caja</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Cardboard" title="Google Cardboard">Cardboard</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chromecast" title="Chromecast">Chromecast</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chrome_OS" title="Chrome OS">Chrome OS</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Chromebit" title="Chromebit">Chromebit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chromebook" title="Chromebook">Chromebook</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chromebox" title="Chromebox">Chromebox</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chrome_Zone" title="Chrome Zone">Chrome Zone</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Compute_Engine" title="Google Compute Engine">Compute Engine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Contact_Lens" title="Google Contact Lens">Contact Lens</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Custom_Search" title="Google Custom Search">Custom Search</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dart_(programming_language)" title="Dart (programming language)">Dart</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Earth_Engine" title="Google Earth Engine">Earth Engine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Fit" title="Google Fit">Fit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Glass" title="Google Glass">Glass</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_File_System" title="Google File System">GFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Apps_Marketplace" title="Google Apps Marketplace">Marketplace</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Native_Client" title="Google Native Client">Native Client</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Nexus" title="Google Nexus">Nexus</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenSocial" title="OpenSocial">OpenSocial</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play" title="Google Play">Play</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play_Books" title="Google Play Books">Books</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play_Games" title="Google Play Games">Games</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play_Music" title="Google Play Music">Music</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Play_Newsstand" title="Google Play Newsstand">Newsstand</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Public_DNS" title="Google Public DNS">Public DNS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Questions_and_Answers" title="Google Questions and Answers">Q &amp; A</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Wallet" title="Google Wallet">Wallet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Development tools</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_APIs" title="Google APIs">AJAX APIs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/App_Inventor_for_Android" title="App Inventor for Android">App Inventor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Closure_Tools" title="Google Closure Tools">Closure Tools</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Developers" title="Google Developers">Developers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Gadgets_API" title="Google Gadgets API">Gadgets API</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GData" title="GData">GData</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Googlebot" title="Googlebot">Googlebot</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Guava" title="Google Guava">Guava</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Guice" title="Google Guice">Guice</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_platform#Software" title="Google platform">GWS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" title="Keyhole Markup Language">KML</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Kythe" title="Google Kythe">Kythe</a></li>
+<li><strong class="selflink">MapReduce</strong></li>
+<li><a href="https://en.wikipedia.org/wiki/Sitemaps" title="Sitemaps">Sitemaps</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Storage" title="Google Storage">Storage</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Summer_of_Code" title="Google Summer of Code">Summer of Code</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Web_Toolkit" title="Google Web Toolkit">Web Toolkit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Webmaster_Tools" title="Google Webmaster Tools">Webmaster Tools</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Website_Optimizer" title="Google Website Optimizer">Website Optimizer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Swiffy" title="Google Swiffy">Swiffy</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Publishing</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Blogger_(service)" title="Blogger (service)">Blogger</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Bookmarks" title="Google Bookmarks">Bookmarks</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Drive" title="Google Drive">Drive</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Docs" title="Google Docs" class="mw-redirect">Docs, Sheets, Slides</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Domains" title="Google Domains">Google Domains</a></li>
+<li><a href="https://en.wikipedia.org/wiki/FeedBurner" title="FeedBurner">FeedBurner</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Map_Maker" title="Google Map Maker">Map Maker</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Panoramio" title="Panoramio">Panoramio</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Picasa#Picasa_Web_Albums" title="Picasa">Picasa Web Albums</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Sites" title="Google Sites">Sites (JotSpot)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/YouTube" title="YouTube">YouTube</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Vevo" title="Vevo">Vevo</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Zagat" title="Zagat">Zagat</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Google_Search" title="Google Search">Search</a> (<a href="https://en.wikipedia.org/wiki/Timeline_of_Google_Search" title="Timeline of Google Search">timeline</a>)</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Search_Appliance" title="Google Search Appliance">Appliance</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Audio_Indexing" title="Google Audio Indexing">Audio</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Blog_Search" title="Google Blog Search">Blog Search</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Books" title="Google Books">Books</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Finance" title="Google Finance">Finance</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Flights" title="Google Flights">Flights</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Images" title="Google Images">Images</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Maps" title="Google Maps">Maps</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Street_View" title="Google Street View">Street View</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Competition_of_Google_Street_View" title="Competition of Google Street View" class="mw-redirect">Competition</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Locations_of_Google_Street_View" title="Locations of Google Street View" class="mw-redirect">Locations</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Street_View_privacy_concerns" title="Google Street View privacy concerns">Privacy concerns</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Timeline_of_Google_Street_View" title="Timeline of Google Street View" class="mw-redirect">Timeline</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_News" title="Google News">News</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_News_Archive" title="Google News Archive">Archive</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Patents" title="Google Patents">Patents</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Scholar" title="Google Scholar">Scholar</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Shopping" title="Google Shopping">Shopping</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Groups" title="Google Groups">Usenet</a></li>
+</ul>
+</div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tbody><tr>
+<th scope="row" class="navbox-group">Algorithms</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/PageRank" title="PageRank">PageRank</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Panda" title="Google Panda">Panda</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Penguin" title="Google Penguin">Penguin</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Hummingbird" title="Google Hummingbird">Hummingbird</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Features</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Web_History" title="Google Web History">Web History</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Personalized_Search" title="Google Personalized Search">Personalized</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Real-Time_Search" title="Google Real-Time Search">Real-Time</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Search#Instant_Search" title="Google Search">Instant Search</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SafeSearch" title="SafeSearch">SafeSearch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Voice_Search" title="Google Voice Search">Voice Search</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Analysis</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Insights_for_Search" title="Google Insights for Search">Insights for Search</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Trends" title="Google Trends">Trends</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Knowledge_Graph" title="Knowledge Graph">Knowledge Graph</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Knowledge_Vault" title="Knowledge Vault">Knowledge Vault</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/List_of_Google_products#Discontinued_products_and_services" title="List of Google products">Discontinued</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Aardvark_(search_engine)" title="Aardvark (search engine)">Aardvark</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Answers" title="Google Answers">Answers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Browser_Sync" title="Google Browser Sync">Browser Sync</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Base" title="Google Base">Base</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Buzz" title="Google Buzz">Buzz</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Checkout" title="Google Checkout">Checkout</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_Frame" title="Google Chrome Frame">Chrome Frame</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AdWords#Google_Click-to-Call" title="AdWords">Click-to-Call</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Cloud_Connect" title="Google Cloud Connect">Cloud Connect</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Code_Search" title="Google Code Search">Code Search</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Currents" title="Google Currents">Currents</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Desktop" title="Google Desktop">Desktop</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Dictionary" title="Google Dictionary">Dictionary</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dodgeball_(service)" title="Dodgeball (service)">Dodgeball</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Fast_Flip" title="Google Fast Flip">Fast Flip</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gears_(software)" title="Gears (software)">Gears</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GOOG-411" title="GOOG-411">GOOG-411</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_TV" title="Google TV">Google TV</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jaiku" title="Jaiku">Jaiku</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Knol" title="Knol">Knol</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Health" title="Google Health">Health</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IGoogle" title="IGoogle">iGoogle</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Image_Labeler" title="Google Image Labeler">Image Labeler</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Labs" title="Google Labs">Labs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Latitude" title="Google Latitude">Latitude</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Lively" title="Google Lively">Lively</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Mashup_Editor" title="Google Mashup Editor">Mashup Editor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Notebook" title="Google Notebook">Notebook</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Offers" title="Google Offers">Offers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Orkut" title="Orkut">Orkut</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Pack" title="Google Pack">Pack</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Page_Creator" title="Google Page Creator">Page Creator</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Picnik" title="Picnik">Picnik</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_PowerMeter" title="Google PowerMeter">PowerMeter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Reader" title="Google Reader">Reader</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Script_Converter" title="Google Script Converter">Script Converter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_SearchWiki" title="Google SearchWiki">SearchWiki</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Sidewiki" title="Google Sidewiki">Sidewiki</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Slide.com" title="Slide.com">Slide</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Squared" title="Google Squared">Squared</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Talk" title="Google Talk">Talk</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Pack#Google_Updater" title="Google Pack">Updater</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Urchin_(software)" title="Urchin (software)">Urchin</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Videos" title="Google Videos">Videos</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Video_Marketplace" title="Google Video Marketplace">Video Marketplace</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Apache_Wave" title="Apache Wave">Wave</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Web_Accelerator" title="Google Web Accelerator">Web Accelerator</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">People</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Eric_Schmidt" title="Eric Schmidt">Eric Schmidt</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Alan_Eustace" title="Alan Eustace">Alan Eustace</a></li>
+<li><a href="https://en.wikipedia.org/wiki/John_Doerr" title="John Doerr">John Doerr</a></li>
+<li><a href="https://en.wikipedia.org/wiki/John_L._Hennessy" title="John L. Hennessy">John L. Hennessy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ray_Kurzweil" title="Ray Kurzweil">Raymond Kurzweil</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ann_Mather" title="Ann Mather">Ann Mather</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Paul_Otellini" title="Paul Otellini">Paul Otellini</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ram_Shriram" title="Ram Shriram">Ram Shriram</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shirley_M._Tilghman" title="Shirley M. Tilghman">Shirley M. Tilghman</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Matt_Cutts" title="Matt Cutts">Matt Cutts</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Al_Gore" title="Al Gore">Al Gore</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rajen_Sheth" title="Rajen Sheth">Rajen Sheth</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vint_Cerf" title="Vint Cerf">Vint Cerf</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Alan_Mulally" title="Alan Mulally">Alan Mulally</a></li>
+<li><a href="https://en.wikipedia.org/wiki/David_Drummond_(Google)" title="David Drummond (Google)">David Drummond</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Patrick_Pichette" title="Patrick Pichette">Patrick Pichette</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Amit_Singhal" title="Amit Singhal">Amit Singhal</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jeff_Dean_(computer_scientist)" title="Jeff Dean (computer scientist)">Jeff Dean</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Omid_Kordestani" title="Omid Kordestani">Omid Kordestani</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rachel_Whetstone" title="Rachel Whetstone">Rachel Whetstone</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Salar_Kamangar" title="Salar Kamangar">Salar Kamangar</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sundar_Pichai" title="Sundar Pichai">Sundar Pichai</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Susan_Wojcicki" title="Susan Wojcicki">Susan Wojcicki</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Urs_H%C3%B6lzle" title="Urs Hölzle">Urs Hölzle</a></li>
+</ul>
+</div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tbody><tr>
+<th scope="row" class="navbox-group">Founders</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Larry_Page" title="Larry Page">Larry Page</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sergey_Brin" title="Sergey Brin">Sergey Brin</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Category:Google" title="Category:Google">Other</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Art_Project" title="Google Art Project">Art Project</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Calico_(company)" title="Calico (company)">Calico (company)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Current" title="Google Current">Current</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Chrome_Experiments" title="Google Chrome Experiments">Chrome Experiments</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Code-In" title="Google Code-In" class="mw-redirect">Code-In</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Code_Jam" title="Google Code Jam">Code Jam</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Developer_Day" title="Google Developer Day">Developer Day</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Business_Groups" title="Google Business Groups">Google Business Groups</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Data_Liberation_Front" title="Google Data Liberation Front">Data Liberation</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Takeout" title="Google Takeout">Takeout</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Developer_Expert" title="Google Developer Expert">Google Developer Expert</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Enterprise" title="Google Enterprise" class="mw-redirect">Google Enterprise</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_driverless_car" title="Google driverless car">Driverless car</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Fiber" title="Google Fiber">Fiber</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_China" title="Google China">Google China</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Express" title="Google Express">Google Express</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Googlization" title="Googlization">Googlization</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Grants" title="Google Grants">Grants</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google.org" title="Google.org">Google.org</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_logo" title="Google logo">Logo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Doodle" title="Google Doodle">Google Doodles</a>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_Doodles_(1998%E2%80%932009)" title="List of Google Doodles (1998–2009)">1998–2009</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_Doodles_in_2010" title="List of Google Doodles in 2010">2010</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_Doodles_in_2011" title="List of Google Doodles in 2011">2011</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_Doodles_in_2012" title="List of Google Doodles in 2012">2012</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_Doodles_in_2013" title="List of Google Doodles in 2013">2013</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_Doodles_in_2014" title="List of Google Doodles in 2014">2014</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_Google_Doodles_in_2015" title="List of Google Doodles in 2015">2015</a></li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Lunar_X_Prize" title="Google Lunar X Prize">Lunar X Prize</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Material_design" title="Material design">Material design</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Motorola_Mobility" title="Motorola Mobility">Motorola Mobility</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Ventures" title="Google Ventures">Ventures</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_WiFi" title="Google WiFi">WiFi</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_X" title="Google X">X</a></li>
+</ul>
+</div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tbody><tr>
+<th scope="row" class="navbox-group"><a href="https://en.wikipedia.org/wiki/Category:Google_events" title="Category:Google events">Events</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Science_Fair" title="Google Science Fair">Science Fair</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Searchology" title="Google Searchology">Searchology</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_I/O" title="Google I/O">I/O</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Developer_Day" title="Google Developer Day">Developer Day</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AtGoogleTalks" title="AtGoogleTalks">AtGoogleTalks</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Code_Jam" title="Google Code Jam">Code Jam</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Highly_Open_Participation_Contest" title="Google Highly Open Participation Contest">Highly Open Participation Contest</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Code-in" title="Google Code-in">Code-in</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Projects</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Project_Ara" title="Project Ara">Ara</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Project_Loon" title="Project Loon">Loon</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Project_Tango" title="Project Tango">Tango</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Real estate</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/111_Eighth_Avenue" title="111 Eighth Avenue">111 Eighth Avenue</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Googleplex" title="Googleplex">Googleplex</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AI_Challenge" title="AI Challenge">AI Challenge</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_bomb" title="Google bomb">Bomb</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Goojje" title="Goojje">Goojje</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Monopoly_City_Streets" title="Monopoly City Streets">Monopoly City Streets</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unity_(cable_system)" title="Unity (cable system)">Unity</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="./mapreduce_files/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31"> <b><a href="https://en.wikipedia.org/wiki/Category:Google" title="Category:Google">Category</a></b></li>
+<li><img alt="Commons page" src="./mapreduce_files/12px-Commons-logo.svg.png" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376"> <b><a href="https://commons.wikimedia.org/wiki/Google" class="extiw" title="commons:Google">Commons</a></b></li>
+<li><img alt="WikiProject" src="./mapreduce_files/16px-People_icon.svg.png" title="WikiProject" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/24px-People_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/32px-People_icon.svg.png 2x" data-file-width="100" data-file-height="100"> <b><a href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Google" title="Wikipedia:WikiProject Google">WikiProject</a></b></li>
+<li><img alt="Wikiversity page" src="./mapreduce_files/16px-Wikiversity-logo.svg.png" title="Wikiversity page" width="16" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/24px-Wikiversity-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/32px-Wikiversity-logo.svg.png 2x" data-file-width="1000" data-file-height="800"> <b><a href="https://en.wikiversity.org/wiki/Google" class="extiw" title="v:Google">Wikiversity</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1224
+CPU time usage: 0.412 seconds
+Real time usage: 0.494 seconds
+Preprocessor visited node count: 2531/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 166398/2097152 bytes
+Template argument size: 2204/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 10/500
+Lua time usage: 0.107/10.000 seconds
+Lua memory usage: 3.24 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  307.382      1 - -total
+ 54.03%  166.078      1 - Template:Reflist
+ 24.53%   75.415      9 - Template:Cite_doi
+ 17.39%   53.451      4 - Template:Navbox
+ 14.59%   44.835      1 - Template:Google_Inc.
+ 14.36%   44.126      1 - Template:Citation_needed
+ 12.29%   37.778     15 - Template:Cite_web
+  9.41%   28.920      4 - Template:Cite_journal
+  9.41%   28.912      1 - Template:Fix
+  9.32%   28.635      1 - Template:Commons_category
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1702875-0!*!0!!en!4!* and timestamp 20150419133931 and revision id 657182448
+ -->
+<noscript>&lt;img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /&gt;</noscript></div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://en.wikipedia.org/w/index.php?title=MapReduce&oldid=657182448">http://en.wikipedia.org/w/index.php?title=MapReduce&amp;oldid=657182448</a>"					</div>
+													<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Google_software" title="Category:Google software">Google software</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Parallel_computing" title="Category:Parallel computing">Parallel computing</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Distributed_computing_architecture" title="Category:Distributed computing architecture">Distributed computing architecture</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Pages_containing_links_to_subscription-only_content" title="Category:Pages containing links to subscription-only content">Pages containing links to subscription-only content</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Pages_containing_cite_templates_with_deprecated_parameters" title="Category:Pages containing cite templates with deprecated parameters">Pages containing cite templates with deprecated parameters</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_from_February_2015" title="Category:Articles with unsourced statements from February 2015">Articles with unsourced statements from February 2015</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Commons_category_with_local_link_same_as_on_Wikidata" title="Category:Commons category with local link same as on Wikidata">Commons category with local link same as on Wikidata</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_example_code" title="Category:Articles with example code">Articles with example code</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=MapReduce&type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=MapReduce" title="You&#39;re encouraged to log in; however, it&#39;s not mandatory. [ctrl-option-o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li id="ca-nstab-main" class="selected"><span><a href="./mapreduce_files/mapreduce.html" title="View the content page [ctrl-option-c]" accesskey="c">Article</a></span></li>
+															<li id="ca-talk"><span><a href="https://en.wikipedia.org/wiki/Talk:MapReduce" title="Discussion about the content page [ctrl-option-t]" accesskey="t">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label" tabindex="0"><span>Variants</span><a href="https://en.wikipedia.org/wiki/MapReduce#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="./mapreduce_files/mapreduce.html">Read</a></span></li>
+															<li id="ca-edit"><span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=edit" title="You can edit this page. Please use the preview button before saving [ctrl-option-e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=history" title="Past versions of this page [ctrl-option-h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label" tabindex="0"><span>More</span><a href="https://en.wikipedia.org/wiki/MapReduce#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://en.wikipedia.org/w/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Search" title="Search Wikipedia [ctrl-option-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton">								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [ctrl-option-z]" accesskey="z">Main page</a></li>
+													<li id="n-contents"><a href="https://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+													<li id="n-featuredcontent"><a href="https://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+													<li id="n-currentevents"><a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+													<li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random" title="Load a random article [ctrl-option-x]" accesskey="x">Random article</a></li>
+													<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&utm_medium=sidebar&utm_campaign=C13_en.wikipedia.org&uselang=en" title="Support us">Donate to Wikipedia</a></li>
+													<li id="n-shoplink"><a href="https://shop.wikimedia.org/" title="Visit the Wikimedia Shop">Wikipedia store</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+													<li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+													<li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+													<li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [ctrl-option-r]" accesskey="r">Recent changes</a></li>
+													<li id="n-contactpage"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/MapReduce" title="List of all English Wikipedia pages containing links to this page [ctrl-option-j]" accesskey="j">What links here</a></li>
+													<li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/MapReduce" title="Recent changes in pages linked from this page [ctrl-option-k]" accesskey="k">Related changes</a></li>
+													<li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [ctrl-option-u]" accesskey="u">Upload file</a></li>
+													<li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [ctrl-option-q]" accesskey="q">Special pages</a></li>
+													<li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&oldid=657182448" title="Permanent link to this revision of the page">Permanent link</a></li>
+													<li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&action=info" title="More information about this page">Page information</a></li>
+													<li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q567759" title="Link to connected data repository item [ctrl-option-g]" accesskey="g">Wikidata item</a></li>
+						<li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=MapReduce&id=657182448" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+
+			<div class="body">
+									<ul>
+													<li id="coll-create_a_book"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=book_creator&referer=MapReduce">Create a book</a></li>
+													<li id="coll-download-as-rdf2latex"><a href="https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=render_article&arttitle=MapReduce&oldid=657182448&writer=rdf2latex">Download as PDF</a></li>
+													<li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=MapReduce&printable=yes" title="Printable version of this page [ctrl-option-p]" accesskey="p">Printable version</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label"><span class="uls-settings-trigger" tabindex="0" role="button" aria-haspopup="true" original-title="Language settings"></span>
+			<h3 id="p-lang-label">Languages</h3>
+
+			<div class="body">
+									<ul>
+													<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/MapReduce" title="MapReduce – Catalan" lang="ca" hreflang="ca">Català</a></li>
+													<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/MapReduce" title="MapReduce – Czech" lang="cs" hreflang="cs">Čeština</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/MapReduce" title="MapReduce – German" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/MapReduce" title="MapReduce – Spanish" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/MapReduce" title="MapReduce – Basque" lang="eu" hreflang="eu">Euskara</a></li>
+													<li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%86%DA%AF%D8%A7%D8%B4%D8%AA%E2%80%8C%DA%A9%D8%A7%D9%87%D8%B4" title="نگاشت‌کاهش – Persian" lang="fa" hreflang="fa">فارسی</a></li>
+													<li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/MapReduce" title="MapReduce – French" lang="fr" hreflang="fr">Français</a></li>
+													<li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%A7%B5%EB%A6%AC%EB%93%80%EC%8A%A4" title="맵리듀스 – Korean" lang="ko" hreflang="ko">한국어</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/MapReduce" title="MapReduce – Italian" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/MapReduce" title="MapReduce – Hungarian" lang="hu" hreflang="hu">Magyar</a></li>
+													<li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/MapReduce" title="MapReduce – Dutch" lang="nl" hreflang="nl">Nederlands</a></li>
+													<li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/MapReduce" title="MapReduce – Japanese" lang="ja" hreflang="ja">日本語</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/MapReduce" title="MapReduce – Polish" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/MapReduce" title="MapReduce – Portuguese" lang="pt" hreflang="pt">Português</a></li>
+													<li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/MapReduce" title="MapReduce – Romanian" lang="ro" hreflang="ro">Română</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/MapReduce" title="MapReduce – Russian" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/MapReduce" title="MapReduce – Ukrainian" lang="uk" hreflang="uk">Українська</a></li>
+													<li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/MapReduce" title="MapReduce – Chinese" lang="zh" hreflang="zh">中文</a></li>
+													
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q567759#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 19 April 2015, at 13:39.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="https://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="https://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="https://en.m.wikipedia.org/w/index.php?title=MapReduce&mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+															<a href="https://wikimediafoundation.org/"><img src="./mapreduce_files/wikimedia-button.png" srcset="//bits.wikimedia.org/images/wikimedia-button-1.5x.png 1.5x, //bits.wikimedia.org/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"></a>
+													</li>
+											<li id="footer-poweredbyico">
+															<a href="https://www.mediawiki.org/"><img src="./mapreduce_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="//bits.wikimedia.org/static-1.26wmf1/resources/assets/poweredby_mediawiki_132x47.png 1.5x, //bits.wikimedia.org/static-1.26wmf1/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>if(window.jQuery)jQuery.ready();</script><script>if(window.mw){
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.cite","mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.imageMetrics.loader","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents.statsd","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false\u0026amp;lang=en\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script><script src="./mapreduce_files/load(3).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":110,"wgHostname":"mw1068"});
+}</script>
+	
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
