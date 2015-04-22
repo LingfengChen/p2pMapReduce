@@ -120,6 +120,7 @@ void* handle(void *Args)
 	free(Args);
 	int buf1[SIZEMAX];
 	int buf2[SIZEMAX];
+	char cmd[SIZEMAX];
 	char program_name[SIZEMAX];
 	char data_name[SIZEMAX];
 	char file_name[SIZEMAX];
@@ -152,6 +153,12 @@ void* handle(void *Args)
 		fileRecv(clientfd,data_name);
 		fileRun(program_name,data_name,output);
 		fileSend(clientfd,output);
+		sprintf(cmd,"rm %s",output);
+		system(cmd);
+		sprintf(cmd,"rm %s",data_name);
+		system(cmd);
+		sprintf(cmd,"rm %s",program_name);
+		system(cmd);
 	}
 	close(clientfd);
 }
@@ -163,6 +170,7 @@ void fileRun(char* program_name,char* data_name,char* output)
 	strcat(cmd,program_name);
 	strcat(cmd," <");
 	strcat(cmd,data_name);
+	strcat(cmd,"|sort");
 	strcat(cmd," >");
 	strcat(cmd,output);
 	system(cmd);
