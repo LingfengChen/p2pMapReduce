@@ -70,6 +70,8 @@ extern char **environ; /* defined by libc */
 #define ALLOCATE 7
 
 #define ONLINE 1
+#define OFFLINE 2
+#define BUSY 3
 #define EMPTY -1
 
 /* Our own error-handling functions */
