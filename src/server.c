@@ -51,6 +51,10 @@ void* cmd()
       	{
       		fileSeg("a",5);
       	}
+      	else if(!strcmp(input,"checkmerge"))
+      	{
+      		fileMerge(3,"a");
+      	}
     }
     return;
 }
@@ -86,6 +90,7 @@ void* handle(void *Args)
 	free(Args);
 	int buf1[SIZEMAX];
 	int buf2[SIZEMAX];
+	char cmd[SIZEMAX];
 	char file_name[SIZEMAX];
 	char program_name[SIZEMAX];
 	char data_name[SIZEMAX];
@@ -134,15 +139,33 @@ void* handle(void *Args)
 		fileSeg(data_name,numActual);
 		for(i=0;i<numActual;i++)
 		{
-			allocateTask(i,Task[i],program_name,data_name,output);
+			if(allocateTask(i,Task[i],program_name,data_name,output)==-1)
+			{
+				while(1)
+				{
+					printf("Task %d Need spare wheel\n",i);
+					ret=findSpareWheel(i,program_name,data_name,output);
+					if(ret!=-1)
+					{
+						printf("Spare Wheel over\n");
+						break;
+					}
+				}
+			}
 			printf("allocation %d is over\n",i);
 		}
-
-
-
+		fileMerge(numActual,output);
+		for(i=0;i<numActual;i++)
+		{	
+			sprintf(cmd,"rm %s_%d",output,i);
+			system(cmd);
+		}
+		for(i=0;i<numActual;i++)
+		{	
+			sprintf(cmd,"rm %s_%d",data_name,i);
+			system(cmd);
+		}
 	}
-	else 
-
 	close(clientfd);
 }
 
@@ -150,18 +173,19 @@ int tableAdd(SA addr)
 {
 	pthread_t tid;
 	int i=0;
-	SA* Args;
+	int* Args;
 	for(i=0;i<TABLESIZE;i++)
 	{
 		if(Table[i].status==EMPTY)
 		{
-			Args=(SA*)Malloc(sizeof(SA));
-			*Args=addr;
+			Args=(int*)Malloc(sizeof(int));
+			*Args=i;
         	Pthread_create(&tid,NULL,keepAlive,Args);
         	pthread_detach(tid);
         	Table[i].addr=addr;
 			Table[i].status=ONLINE;
 			Table[i].tid=tid;
+			Table[i].index=i;
 			return i;
 		}
 	}
@@ -201,15 +225,35 @@ void selectNode(int num,struct clientNode Task[SIZEMAX],int* numActual)
 		if(Table[i].status==ONLINE)
 		{
 			Task[size]=Table[i];
+			Table[i].status=BUSY;
 			size++;
 			printf("find node for the task\n");
+			if(size>=num)
+				break;
 		}
 	}
 	*numActual=size;
 }
+int findSpareWheel(int taskid,char* program_name,char* data_name,char* output)
+{
+	int i=0;
+	struct clientNode sw;
+	for(i=0;i<TABLESIZE;i++)
+	{
+		if(Table[i].status==ONLINE)
+		{
+			//need mutex actually
+			sw=Table[i];
+			Table[i].status=BUSY;
+			allocateTask(taskid,sw,program_name,data_name,output);
+			break;
+		}
+	}
+}
 int allocateTask(int taskid,struct clientNode client,char* program_name,char* data_name,char* output)
 {
 	int connfd;
+	int rc;
 	int buf1[SIZEMAX];
 	char prog[SIZEMAX];
 	char data[SIZEMAX];
@@ -226,17 +270,57 @@ int allocateTask(int taskid,struct clientNode client,char* program_name,char* da
 	if ((connfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
 		return -1;
 	if (connect(connfd, (struct sockaddr *) &(client.addr), sizeof(SA)) < 0)
+	{
+		Table[client.index].status=OFFLINE;
 		return -1;
+	}
 	buf1[0]=ALLOCATE;
 	buf1[1]=taskid;
-	Rio_writep(connfd,buf1,2*sizeof(int));
-	Rio_writep(connfd,prog,SIZEMAX);
-	Rio_writep(connfd,data,SIZEMAX);
-	Rio_writep(connfd,outp,SIZEMAX);
-	fileSend(connfd,prog);
-	fileSend(connfd,data);
-	fileRecv(connfd,outp);
+	rc=Rio_writep(connfd,buf1,2*sizeof(int));
+	if(rc<=0)
+	{
+		Table[client.index].status=OFFLINE;
+		return -1;
+	}
+	rc=Rio_writep(connfd,prog,SIZEMAX);
+	if(rc<=0)
+	{
+		Table[client.index].status=OFFLINE;
+		return -1;
+	}
+	rc=Rio_writep(connfd,data,SIZEMAX);
+	if(rc<=0)
+	{
+		Table[client.index].status=OFFLINE;
+		return -1;
+	}
+	rc=Rio_writep(connfd,outp,SIZEMAX);
+	if(rc<=0)
+	{
+		Table[client.index].status=OFFLINE;
+		return -1;
+	}
+	rc=fileSend(connfd,prog);
+	if(rc<=0)
+	{
+		Table[client.index].status=OFFLINE;
+		return -1;
+	}
+	rc=fileSend(connfd,data);
+	if(rc<=0)
+	{
+		Table[client.index].status=OFFLINE;
+		return -1;
+	}
+	rc=fileRecv(connfd,outp);
+	if(rc<=0)
+	{
+		Table[client.index].status=OFFLINE;
+		return -1;
+	}
+	Table[client.index].status=ONLINE;
 	close(connfd);
+	return 0;
 }
 
 void fileDuplicate(char* file_name,int num)
@@ -262,9 +346,71 @@ void fileDuplicate(char* file_name,int num)
 	fclose(fp);
 }
 
+void fileMerge(int num,char* output)
+{
+	int i=0;
+	FILE* fp[SIZEMAX];
+	FILE* fpo;
+	fpo=fopen(output,"w");
+	char file[SIZEMAX];
+	int top[SIZEMAX];
+	char topline[SIZEMAX][SIZEMAX];
+	char minline[SIZEMAX];
+	int min=-1;
+	for(i=0;i<num;i++)
+	{
+		sprintf(file,"%s_%d",output,i);
+		fp[i]=fopen(file,"r");
+	}
+	for(i=0;i<num;i++)
+	{
+		top[i]=0;
+		fgets(topline[i],SIZEMAX,fp[i]);
+	}
+	while(1)
+	{
+		min=-1;
+		for(i=0;i<num;i++)
+		{
+			if(top[i]!=-1)
+			{
+				if(min==-1)
+				{
+					strcpy(minline,topline[i]);
+					min=i;
+					continue;
+				}
+				if(strcmp(topline[i],minline)<0)
+				{
+					min=i;
+					strcpy(minline,topline[i]);
+				}
+			}
+		}
+		if(min==-1)
+			break;
+		printf("%s\n",minline);
+		fputs(minline,fpo);
+		if(fgets(topline[min],SIZEMAX,fp[min])==NULL)
+		{
+			top[min]=-1;
+		}
+		else
+		{
+			top[min]++;
+		}
+	}
+	for(i=0;i<num;i++)
+	{
+		fclose(fp[i]);
+	}
+	fclose(fpo);
+}
+
 void *keepAlive(void *Args)
 {
-	SA clientaddr=*((SA*)Args);
+	int tid=*(int*)Args;
+	SA clientaddr=Table[tid].addr;
 	int fd;
 	int num;
 	int buf1[SIZEMAX];
@@ -277,7 +423,7 @@ void *keepAlive(void *Args)
 		if(retry>MAXRETRY)
 		{
 			printf("retry time is over\n");
-			tableRemove(clientaddr);
+			Table[tid].status=EMPTY;
 			return;
 		}
 		sleep(3);
@@ -290,6 +436,7 @@ void *keepAlive(void *Args)
 		{
 			printf("connection error retry %d\n",retry);
 			retry++;
+			Table[tid].status=OFFLINE;
 			close(fd);
 			continue;
 		}
@@ -297,6 +444,7 @@ void *keepAlive(void *Args)
 		{
 			printf("fd < 0 retry %d\n",retry);
 			retry++;
+			Table[tid].status=OFFLINE;
 			sleep(5);
 			close(fd);
 			continue;
@@ -307,6 +455,7 @@ void *keepAlive(void *Args)
 		{
 			printf("can not write retry %d\n",retry);
 			retry++;
+			Table[tid].status=OFFLINE;
 			sleep(5);
 			close(fd);
 			continue;
@@ -317,12 +466,14 @@ void *keepAlive(void *Args)
 		{
 			printf("can not read retry %d\n",retry);
 			retry++;
+			Table[tid].status=OFFLINE;
 			sleep(5);
 			close(fd);
 			continue;
 		}
 		close(fd);
 		retry=0;
+		Table[tid].status=ONLINE;
 	}
 }
 void ip_convert(SA addr,char* addrs)
