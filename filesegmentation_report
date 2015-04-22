@@ -1,0 +1,17 @@
+Teng Hu (th173)
+File segmentation:
+
+    We start with basic file segmentation, divide the content in the file uniformly into several sub files with file stream 
+    manipulation.  Firstly, I calculate how many keys in the original file,  then divide it by the number of files user want, 
+    regardless of differences the keys were. If there were reminder, we put the reminder together in the last file.
+
+    Additionally, we want the same keys are more likely to be segmented in the same file. Since the original file remains 
+    unknown and complex, we need to keep the segment function robust and accurate. In terms of situation like too many same 
+    keys in the file, there is a tradeoff to make, which is the uniform distribution of keys and the same-key-same –file 
+    preference. To address the problem,  Every time we finish segmenting a file, we compare the last key with the next key in 
+    the original file, if they were the same indicating that the segment window should be expand a little bit, so we incorporate 
+    the next key in our segment file,  and compare the next key until they were different.
+
+    In a sense, this approach ensures the balance between the same-keys preferene and the uniformly distribution of keys 
+    to some extent. 
+ 
