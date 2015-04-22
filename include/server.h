@@ -7,6 +7,7 @@ struct clientNode{
 	SA addr;
 	pthread_t tid;
 	int status;
+	int index;
 };
 struct clientNode Table[TABLESIZE];
 
@@ -18,8 +19,10 @@ int tableAdd(SA addr);
 int tableRemove(SA addr);
 int saEqual(SA addr1,SA addr2);
 void selectNode(int num,struct clientNode Task[SIZEMAX],int* numActual);
+int findSpareWheel(int taskid,char* program_name,char* data_name,char* output);
 int allocateTask(int taskid,struct clientNode client,char* program_name,char* data_name,char* output);
 void fileDuplicate(char* file_name,int num);
+void fileMerge(int num,char* output);
 void ip_convert(SA addr,char*);
 
 pthread_t beathearttid;
